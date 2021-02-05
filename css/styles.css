@@ -1,0 +1,93 @@
+@font-face {
+  font-family: FontdinerSwanky-Regular;
+  src: url("../fonts/FontdinerSwanky-Regular.ttf"); }
+@font-face {
+  font-family: Play-Regular;
+  src: url("../fonts/Play-Regular.ttf"); }
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: Play-Regular; }
+  html h1, body h1 {
+    margin: 0;
+    font-family: FontdinerSwanky-Regular;
+    color: #e9f29b;
+    text-shadow: 2px 2px black;
+    font-size: 30px; }
+
+header {
+  width: 500px;
+  border: 0.1px solid #033b1d;
+  border-radius: 15px 15px 0 0;
+  background: #58764a;
+  height: 50px;
+  padding-left: 24px;
+  padding-right: 24px;
+  box-shadow: 5px 8px 10px #012913; }
+
+body {
+  background: #89b175;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; }
+
+.container {
+  display: flex;
+  flex-direction: column;
+  background: #f7fade;
+  padding: 24px;
+  height: 470px;
+  overflow-y: auto;
+  width: 500px;
+  border-radius: 0 0 15px 15px;
+  box-shadow: 5px 5px 10px #012913; }
+
+.registration-form .photo-sequence, .login-form .photo-sequence {
+  padding: 5px 0 5px 5px;
+  margin-top: 10px;
+  border-top: 1px solid #355723;
+  border-bottom: 1px solid #355723;
+  margin-bottom: 20px; }
+.registration-form form, .login-form form {
+  display: flex;
+  flex-direction: column; }
+  .registration-form form label, .login-form form label {
+    margin-top: 10px;
+    margin-bottom: 5px;
+    font-family: Play-Regular;
+    color: #232323; }
+  .registration-form form input, .login-form form input {
+    height: 25px;
+    font-family: Play-Regular;
+    border-radius: 5px;
+    border: solid 1px #355723;
+    outline: #8d968a; }
+  .registration-form form #question, .login-form form #question {
+    border-top: 1px solid #355723;
+    text-align: center;
+    margin-top: 10px;
+    padding-top: 15px; }
+    .registration-form form #question a, .login-form form #question a {
+      color: #72bb53; }
+  .registration-form form .button-registration, .login-form form .button-registration {
+    margin-top: 30px;
+    background: #698c58;
+    border-radius: 5px;
+    border: #355723;
+    height: 35px;
+    font-size: medium;
+    outline: black;
+    color: #fefac0;
+    box-shadow: 2px 2px 3px #062515;
+    text-shadow: 2px 2px 2px #062515; }
+  .registration-form form .register-link, .login-form form .register-link {
+    margin-top: 20px;
+    border: solid 1px lightblue;
+    border-radius: 5px;
+    background-color: lightblue;
+    text-align: center;
+    height: 25px; }
+
+/*# sourceMappingURL=styles.css.map */

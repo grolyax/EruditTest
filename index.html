@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link type="text/css" rel="stylesheet" href="./css/styles.css">
+    <script src="https://kit.fontawesome.com/a344c1290e.js" crossorigin="anonymous"></script>
+    <title>EruditeTest</title>
+</head>
+
+<body>
+        <header>
+            <h1>Erudite</h1>
+        </header>
+        <div class="container">
+            <div class="registration-form">
+                <div class="photo-sequence">
+                    <img class="imagesLine" src="/pictures/imagesMain/geography.jpg" height="108px" width="auto" alt="geography">
+                    <img class="imagesLine" src="/pictures/imagesMain/nature.jpg" height="108px" width="auto" alt="nature">
+                    <img class="imagesLine" src="/pictures/imagesMain/history.jpg" height="108px" width="auto" alt="history">
+                    <img class="imagesLine" src="/pictures/imagesMain/old-clockwork.jpg" height="108px" width="auto" alt="old-clockwork">
+                </div>
+                <form>
+                    <label>Логин</label>
+                    <input name="email" placeholder="Введите Ваш электронный адрес" />
+                    <span class="error"></span>
+        
+                    <label>Пароль</label>
+                    <input name="password" type="password" placeholder="Не менее 8 символов, используйте цифры и буквы"/>
+                    <span class="error"></span>
+        
+                    <label>Повторите пароль</label>
+                    <input name="repeatPassword" type="password" />
+                    <span class="error"></span>
+        
+                    <button class="button-registration" type="submit">Зарегистрироваться</button> 
+                    <hr>
+                    <p id="question">У Вас есть аккаунт? <a href="/login">Войдите</a></p>
+                </form>
+            </div>
+        </div>
+
+
+    <script type="module" src="./js/script.js"></script>
+</body>
+
+</html>
