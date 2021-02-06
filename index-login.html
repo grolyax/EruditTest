@@ -5,7 +5,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link type="text/css" rel="stylesheet" href="./css/styles.css">
-    <link type="text/css" rel="stylesheet" href="./css/styles-header.css">
     <script src="https://kit.fontawesome.com/a344c1290e.js" crossorigin="anonymous"></script>
     <title>EruditeTest</title>
 </head>
@@ -15,7 +14,7 @@
             <h1><a class="link__main" href="#">Erudite</a></h1>
         </header>
         <div class="container">
-            <div class="registration-form">
+            <div class="login-form">
                 <div class="photo-sequence">
                     <img class="imagesLine" src="/pictures/imagesMain/geography.jpg" height="108px" width="auto" alt="geography">
                     <img class="imagesLine" src="/pictures/imagesMain/nature.jpg" height="108px" width="auto" alt="nature">
@@ -27,17 +26,12 @@
                     <input name="email" placeholder="Введите Ваш электронный адрес" />
                     <span class="error"></span>
         
-                    <label>Пароль</label>
-                    <input name="password" type="password" placeholder="Не менее 8 символов, используйте цифры и буквы"/>
+                    <label id="login">Пароль</label>
+                    <input name="password" type="password" placeholder="Введите свой пароль"/>
                     <span class="error"></span>
         
-                    <label>Повторите пароль</label>
-                    <input name="repeatPassword" type="password" />
-                    <span class="error"></span>
-        
-                    <button class="button-registration" type="submit">Зарегистрироваться</button> 
-                    <hr>
-                    <p id="question">У Вас есть аккаунт? <a href="/login">Войдите</a></p>
+                    <button class="button-login" type="submit">Войти</button>
+                    <p id="question-no">У Вас нет аккаунта? <a href="/login">Зарегистрируйтесь</a></p>
                 </form>
             </div>
         </div>

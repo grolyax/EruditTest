@@ -1,0 +1,30 @@
+
+.list__tests {
+    display: flex;
+    justify-content: space-around;
+    .list__left, .list__right {
+        display: flex;
+        flex-direction: column;
+        .theme {
+            margin: 15px 0;
+            display: flex;
+            align-items: center;
+            width: 220px;
+            height: 70px;
+            background-color: #698c58;
+            border: 1px solid #355723;
+            border-radius: 10px;
+            p {
+                font-size: 24px;
+                padding-left: 20px;
+            }
+            img {
+                color: #192a0f;
+                filter: opacity(75%);
+            }
+            p {
+                color: #fefac0;
+            }
+        }
+    }
+}

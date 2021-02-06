@@ -1,0 +1,48 @@
+#my-records {
+    margin: 0;
+}
+.records {
+    border: 1px solid #1e2919;
+    border-collapse: collapse;
+    font-size: 18px;
+    width: 450px;
+    margin: auto;
+
+    .table-thems {
+        text-align: start;
+        padding: 8px 0 8px 20px;
+        background-color: #698c58;
+        color: #fefac0;
+    }
+    .table-title {
+        .table-title-thems {
+            background-color: #698c58;
+            color: #fefac0;
+        }
+        .table-points,  .table-date {
+            color: #58764a;
+            padding: 8px 10px;
+            width: 125px;
+        }
+    }
+    tr {
+        th {
+            border: 1px solid #24311f;
+        }
+    }
+}
+
+.button-tests {
+display: flex;
+justify-content: space-around;
+    .button-test, .button-new-test {
+        background-color: #698c58;
+        border: 1px solid #355723;
+        border-radius: 10px;
+        width: 200px;
+        height: 40px;  
+        box-shadow: 2px 2px 2px #16240e;  
+        font-size: 18px;
+        color: #fefac0;
+    }
+}

@@ -1,0 +1,55 @@
+
+.registration-form {
+
+    .photo-sequence {
+        padding: 5px 0;
+        margin-top: 10px;
+        margin-bottom: 20px;
+        border-top: 1px solid #355723;
+        border-bottom: 1px solid #355723;  
+    }
+
+
+    form {
+        display: flex;
+        flex-direction: column;
+
+        label {
+            margin-top: 10px;
+            margin-bottom: 5px;
+            font-family: Play-Regular;
+            color: #232323;
+        }
+
+        input {
+            height: 25px;
+            font-family: Play-Regular;
+            border-radius: 5px;
+            border: solid 1px #355723;
+            outline: #8d968a;
+        }
+
+        #question {
+            border-top: 1px solid #355723;
+            text-align: center;
+            margin-top: 15px;
+            padding-top: 15px;
+            a {
+                color: #72bb53;
+            }
+        }
+
+        .button-registration {
+            margin-top: 30px;
+            background: #698c58;
+            border-radius: 5px;
+            border: #355723;
+            height: 35px;
+            font-size: medium;
+            outline: black;
+            color: #fefac0;
+            box-shadow: 2px 2px 3px #062515;
+            text-shadow: 2px 2px 2px #062515;
+        }
+    }
+}
