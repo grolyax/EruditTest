@@ -93,17 +93,17 @@ header {
     border-radius: 5px;
     border: #355723;
     height: 35px;
-    font-size: medium;
+    font-size: 18px;
     outline: black;
     color: #fefac0;
     box-shadow: 2px 2px 3px #062515;
     text-shadow: 2px 2px 2px #062515; }
-  .login-form form #question-no {
+  .login-form form #link-registration {
     border-top: 1px solid #355723;
     text-align: center;
     margin-top: 30px;
     padding-top: 15px; }
-    .login-form form #question-no a {
+    .login-form form #link-registration a {
       color: #72bb53; }
 
 .registration-form .photo-sequence {
@@ -126,12 +126,12 @@ header {
     border-radius: 5px;
     border: solid 1px #355723;
     outline: #8d968a; }
-  .registration-form form #question {
+  .registration-form form #link-login {
     border-top: 1px solid #355723;
     text-align: center;
     margin-top: 15px;
     padding-top: 15px; }
-    .registration-form form #question a {
+    .registration-form form #link-login a {
       color: #72bb53; }
   .registration-form form .button-registration {
     margin-top: 30px;
@@ -182,10 +182,12 @@ header {
     text-align: start;
     padding: 8px 0 8px 20px;
     background-color: #698c58;
-    color: #fefac0; }
+    color: #fefac0;
+    text-shadow: 1px 1px 2px #062515; }
   .records .table-title .table-title-thems {
     background-color: #698c58;
-    color: #fefac0; }
+    color: #fefac0;
+    text-shadow: 1px 1px 2px #062515; }
   .records .table-title .table-points, .records .table-title .table-date {
     color: #58764a;
     padding: 8px 10px;
@@ -204,7 +206,75 @@ header {
     height: 40px;
     box-shadow: 2px 2px 2px #16240e;
     font-size: 18px;
+    text-shadow: 2px 2px 2px #062515;
     color: #fefac0; }
+
+.task__test {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #243e16;
+  color: #355723; }
+  .task__test .number__question {
+    font-style: italic; }
+
+.theme__question {
+  padding-top: 10px;
+  padding-left: 30px;
+  font-size: 20px;
+  color: #192b10;
+  list-style-type: none; }
+
+.test__answer {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  padding: 10px 0;
+  list-style-type: none; }
+  .test__answer img {
+    margin: 10px 15px 5px 5px; }
+
+.test__answer__text {
+  list-style-type: none;
+  width: 100%;
+  padding: 60px 0 25px 0; }
+  .test__answer__text li {
+    display: flex;
+    margin: 0; }
+    .test__answer__text li input {
+      margin: 20px 20px 0 0; }
+    .test__answer__text li .box__answer {
+      width: 350px;
+      height: 30px;
+      background-color: white;
+      border: 1px solid #627a56;
+      border-radius: 7px;
+      font-size: 16px;
+      margin: 10px 0; }
+      .test__answer__text li .box__answer p {
+        margin: 5px 5px 5px 10px; }
+
+.progress__bar {
+  width: 100%;
+  border-top: 3px solid #d66a12; }
+
+.navigator {
+  display: flex;
+  justify-content: space-between;
+  padding: 5px 20px; }
+  .navigator a {
+    text-decoration: none;
+    color: #58764a;
+    font-size: 20px; }
+    .navigator a i {
+      font-size: 30px;
+      padding: 5px 10px; }
+  .navigator .accept {
+    width: 160px;
+    height: 40px;
+    background-color: #3f654f;
+    color: #fefac0;
+    border-radius: 10px;
+    font-size: 18px; }
 
 html, body {
   margin: 0;

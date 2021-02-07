@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link type="text/css" rel="stylesheet" href="./css/styles.css">
+    <script src="https://kit.fontawesome.com/a344c1290e.js" crossorigin="anonymous"></script>
+    <title>EruditeTest</title>
+</head>
+
+<body>
+        <header>
+            <h1><a class="link__main" href="#">Erudite</a></h1>
+            <div class="account">
+                <p class="account__login">user-user</p>
+                <div class="dropdown">
+                    <p class="account__arrow"> <i class="fas fa-sort-down"></i> </p>
+                        <ul class="dropdown__list account__user">
+                            <li class="user__area"><a href="#">Личный кабинет</a> </li>
+                            <li class="exit"><a href="#">Выйти</a></li>
+                        </ul>
+                </div>
+            </div>
+        </header>
+
+        <div class="container">
+            <div class="test__form">
+                <form>
+                    <div class="task__test">
+                        <span class="number__question">Вопрос 1 из 10  </span>
+                        <span class="thems__test">Architecture</span>
+                    </div>
+                    <ol class="theme__question">
+                        <li class="test__question">Усыпальница жены падишаха Шах-Джахана Тадж-Махал?</li>
+                        <ol class="test__answer">
+                            <li > 
+                                <input type="radio" name="answer" value="a1">
+                                <img src="./pictures/imagesArchitecture/1/mavzoley.png" width="180px" height="120px">
+                            </li>
+                            <li>
+                                <input type="radio" name="answer" value="a2" class="checked">
+                                <img src="./pictures/imagesArchitecture/1/Tadzh-Mahal.png" width="180px" height="120px">
+                            </li>
+                            <li>
+                                <input type="radio" name="answer" value="a3">
+                                <img src="./pictures/imagesArchitecture/1/pyramida.png" width="180px" height="120px">
+                            </li>
+                            <li>
+                                <input type="radio" name="answer" value="a4">
+                                <img src="./pictures/imagesArchitecture/1/lenin.jpg" width="180px" height="120px">
+                            </li>
+                        </ol>
+                    </ol>
+                    <p class="progress__bar"></p>
+                    <div class="navigator">
+                        <a href="#"><i class="fas fa-chevron-left"></i>Назад</a>
+                        <button type="submit" class="accept">Принять ответ</button>
+                        <a href="#">Вперёд<i class="fas fa-chevron-right"></i></a>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <script type="module" src="./js/script.js"></script>
+    </body>
+    
+    </html>

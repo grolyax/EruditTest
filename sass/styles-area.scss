@@ -13,11 +13,13 @@
         padding: 8px 0 8px 20px;
         background-color: #698c58;
         color: #fefac0;
+        text-shadow: 1px 1px 2px #062515;
     }
     .table-title {
         .table-title-thems {
             background-color: #698c58;
             color: #fefac0;
+            text-shadow: 1px 1px 2px #062515;
         }
         .table-points,  .table-date {
             color: #58764a;
@@ -43,6 +45,7 @@ justify-content: space-around;
         height: 40px;  
         box-shadow: 2px 2px 2px #16240e;  
         font-size: 18px;
+        text-shadow: 2px 2px 2px #062515;
         color: #fefac0;
     }
 }
