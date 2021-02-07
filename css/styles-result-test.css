@@ -1,0 +1,13 @@
+.records__test {
+  border: 1px solid #1e2919;
+  border-collapse: collapse;
+  font-size: 14px;
+  width: 450px;
+  margin: auto; }
+  .records__test tr th {
+    border: 1px solid #24311f;
+    color: #58764a;
+    padding: 8px 10px;
+    width: 125px; }
+
+/*# sourceMappingURL=styles-result-test.css.map */
