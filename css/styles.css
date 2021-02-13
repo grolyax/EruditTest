@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Play:wght@700&display=swap");
 @font-face {
   font-family: FontdinerSwanky-Regular;
   src: url("../fonts/FontdinerSwanky-Regular.ttf"); }
@@ -288,6 +289,47 @@ header {
     padding: 8px 10px;
     width: 125px; }
 
+.account__buttons {
+  display: flex;
+  width: 195px;
+  margin: 0;
+  justify-content: space-between; }
+
+.button__registration, .button__login {
+  text-decoration: none;
+  text-align: center;
+  padding: 5px 15px 0 15px;
+  background: #698c58;
+  font-family: Play-Regular;
+  border-radius: 3px;
+  border: #355723;
+  height: 25px;
+  box-shadow: 2px 2px 3px #062515;
+  color: #fef8a0;
+  font-size: 15px; }
+
+.button__registration:hover, .button__login:hover {
+  transform: translateY(-1px);
+  background: #729e5c; }
+
+.button__value {
+  height: 35px;
+  width: 140px;
+  margin: 10px 20px 10px 30px;
+  box-shadow: 2px 2px 3px #062515;
+  padding-top: 5px;
+  padding-left: 25px;
+  background-color: #fefac0;
+  border-radius: 2px;
+  border: #355723;
+  text-decoration: none;
+  font-size: 20px;
+  color: #355723; }
+
+.button__value:hover {
+  transform: translateY(-1px);
+  background-color: #fcf485; }
+
 html, body {
   margin: 0;
   padding: 0;
@@ -328,5 +370,45 @@ body {
     padding-left: 234px;
     color: #698c58;
     filter: opacity(75%); }
+
+.main__field {
+  width: 450px;
+  height: 450px;
+  background-color: #58764a;
+  margin-left: 25px;
+  margin-top: 5px;
+  border-radius: 10px;
+  border: 1px solid #263b30; }
+  .main__field .field__question p {
+    color: white;
+    font-size: 40px;
+    text-align: center;
+    margin: 10px 0; }
+  .main__field .field__question img {
+    border-radius: 10px 10px 0 0; }
+  .main__field .field__value {
+    display: flex;
+    margin-left: 5px;
+    padding-top: 15px; }
+    .main__field .field__value .pair__values {
+      display: flex;
+      flex-direction: column; }
+
+.field__answer {
+  width: 400px;
+  margin-top: 80px;
+  margin-left: 40px;
+  padding-left: 10px;
+  padding-right: 10px;
+  border: 1px solid #2c4b1b;
+  border-radius: 10px;
+  background-color: white;
+  color: #355723;
+  text-align: center;
+  font-size: 28px; }
+  .field__answer a {
+    color: #355723; }
+  .field__answer #grade {
+    color: #5eaf3e; }
 
 /*# sourceMappingURL=styles.css.map */
