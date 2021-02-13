@@ -14,6 +14,7 @@
    @import "styles-area.scss";
    @import "styles-test.scss";
    @import "styles-result-test.scss";
+   @import "styles-buttons-main.scss";
 
 
 html, body {
@@ -63,3 +64,37 @@ body {
         filter: opacity(75%);
     }
 }
+
+.main__field {
+    width: 450px;
+    height: 450px;
+    background-color: #58764a;
+    margin-left: 25px;
+    border-radius: 10px;
+    border: 1px solid #263b30;
+    .field__question {
+        p {
+            color: white;
+            font-size: 40px;
+            text-align: center;
+            margin: 10px 0;
+
+        }
+     
+        img {
+            border-radius: 10px 10px 0 0;
+        }
+    }
+    .field__value {
+        display: flex;
+        margin-left: 5px;
+        padding-top: 15px;
+        .pair__values {
+            display: flex;
+            flex-direction: column;
+        }
+    }
+}
+
+
+

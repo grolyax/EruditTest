@@ -1,0 +1,37 @@
+.account__buttons {
+    display: flex;
+    width: 220px;
+    margin: 0;
+    justify-content: space-between;
+}
+
+.button__registration, .button__login {
+    text-decoration: none;
+    text-align: center;
+    padding: 5px 15px 0 15px;
+    background: #698c58;
+    font-family: Play-Regular;
+    border-radius: 3px;
+    border: #355723;
+    height: 25px;
+   
+    box-shadow: 2px 2px 3px #062515;
+    color: #fefac0;
+    font-size: 15px;
+    text-shadow: 1px 1px 1px #062515;
+}
+
+.button__value {
+    height: 35px;
+    width: 140px;
+    margin: 10px 20px 10px 30px;
+    box-shadow: 2px 2px 3px #062515;
+    padding-top: 5px;
+    padding-left: 25px;
+    background-color: #fefac0;
+    border-radius: 2px;
+    border: #355723;
+    text-decoration: none;
+    font-size: 20px;
+    color: #355723;
+}
