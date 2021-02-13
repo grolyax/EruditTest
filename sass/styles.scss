@@ -7,6 +7,9 @@
     font-family: Play-Regular;
     src: url('../fonts/Play-Regular.ttf'); 
    }
+
+   @import url('https://fonts.googleapis.com/css2?family=Play:wght@700&display=swap');
+
    @import "styles-header.scss";
    @import "styles-login.scss";
    @import "styles-registration.scss";
@@ -70,6 +73,7 @@ body {
     height: 450px;
     background-color: #58764a;
     margin-left: 25px;
+    margin-top: 5px;
     border-radius: 10px;
     border: 1px solid #263b30;
     .field__question {
@@ -93,6 +97,26 @@ body {
             display: flex;
             flex-direction: column;
         }
+    }
+}
+
+.field__answer {
+    width: 400px;
+    margin-top: 80px;
+    margin-left: 40px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border: 1px solid #2c4b1b;
+    border-radius: 10px;
+    background-color: white;
+    color: #355723;
+    text-align: center;
+    font-size: 28px;
+    a{
+        color: #355723;
+    }
+    #grade {
+        color: #5eaf3e;
     }
 }
 

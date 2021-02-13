@@ -1,6 +1,6 @@
 .account__buttons {
     display: flex;
-    width: 220px;
+    width: 195px;
     margin: 0;
     justify-content: space-between;
 }
@@ -16,9 +16,13 @@
     height: 25px;
    
     box-shadow: 2px 2px 3px #062515;
-    color: #fefac0;
+    color: #fef8a0;
     font-size: 15px;
-    text-shadow: 1px 1px 1px #062515;
+}
+
+.button__registration:hover, .button__login:hover {
+    transform: translateY(-1px);
+    background: #729e5c;
 }
 
 .button__value {
@@ -34,4 +38,10 @@
     text-decoration: none;
     font-size: 20px;
     color: #355723;
+
+
+}
+.button__value:hover {
+    transform: translateY(-1px);
+    background-color: #fcf485;
 }
