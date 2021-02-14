@@ -16,7 +16,7 @@ const template = `
                     <span class="error"></span>
         
                     <button class="button-login" type="submit">Войти</button>
-                    <p id="link-registration">У Вас нет аккаунта? <a href="/login">Зарегистрируйтесь</a></p>
+                    <p id="link-registration">У Вас нет аккаунта? <a href="/registration">Зарегистрируйтесь</a></p>
                 </form>
             </div>
 `;

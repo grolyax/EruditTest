@@ -10,7 +10,7 @@ header {
   padding-left: 24px;
   padding-right: 24px;
   box-shadow: 5px 8px 10px #012913; }
-  header .account {
+  header .account__dropdown {
     display: flex;
     justify-content: space-between;
     width: 150px;
@@ -19,7 +19,7 @@ header {
     border: 0.5px solid #3b5e29;
     border-radius: 5px;
     box-shadow: 2px 2px 2px #243e16; }
-    header .account p {
+    header .account__dropdown p {
       margin: 5px 0;
       text-align: center;
       color: #e9f29b; }
@@ -58,5 +58,8 @@ header {
 
 .dropdown:hover .dropdown__list li {
   width: 130px; }
+
+.account {
+  width: 200px; }
 
 /*# sourceMappingURL=styles-header.css.map */

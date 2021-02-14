@@ -3,6 +3,7 @@ import renderLogin from './render/render-login.js';
 import renderRegistration from './render/render-registration.js';
 import { getListIdByUrl } from './utils.js'
 import currentUser from './current-user.js';
+import renderMainStart from './render/renderMainStart.js'
 
 
 const listRoutePattern = /^\/list\/\d+$/;
@@ -14,7 +15,18 @@ const LOGIN_URL = '/login';
 
 export function renderPage() {
     const { pathname: currentUrl } = window.location;
+    
+    if (INDEX_URLS.includes(currentUrl)) { 
+      if (currentUser.userData !== null) { 
+        renderMainPersonal();
+      } else {
+        renderMainStart();
+      }
   
+      return;
+    }
+  
+
     if (currentUrl === REGISTRATION_URL) { // можно упростить вынести одинаковые проверки (!currentUser.userData && currentUrl === REGISTRATION_URL), тогда if  уже не нужен - ушёл сюда, а только navigateToUrl('/') поставить в самом конце, чтоб было для null
       if (currentUser.userData !== null) { // здесь могла бы быть или запись (!currentUser.userData) - это тоже самое
         navigateToUrl('/');

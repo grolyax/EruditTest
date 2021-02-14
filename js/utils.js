@@ -1,4 +1,4 @@
-/*export function getId(element) {
+export function getId(element) {
     return parseInt(element.id.split('-')[1]);
 } //"task-1" -> 1 (split разбивает на части и делает из них массив, и из массива мы берём второй элемент, а parseInt делает из значения число)
 
@@ -21,7 +21,7 @@ export function generateId(tasks) {
 
     //возвращаем больший, который больше максимального на 1
     return maxId + 1;
-} */
+} 
 
 
 export function getListIdByUrl() {
@@ -30,7 +30,7 @@ export function getListIdByUrl() {
     const splittedCyrrentUrl = currentUrl.split('/');
 
     return parseInt(splittedCyrrentUrl[splittedCyrrentUrl.length - 1], 10);
-}
+} 
 
 export function showErrors(errors) {
     for (let key in errors) {

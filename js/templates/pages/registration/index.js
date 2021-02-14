@@ -8,7 +8,7 @@ const registrationTemplate = `
 </div>
 <form>
     <label>Логин</label>
-    <input name="email" placeholder="Введите Ваш электронный адрес" />
+    <input name="email" placeholder="Введите Ваш электронный адрес"/>
     <span class="error"></span>
 
     <label>Пароль</label>
