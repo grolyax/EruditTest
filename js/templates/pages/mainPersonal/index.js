@@ -1,30 +1,5 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link type="text/css" rel="stylesheet" href="./css/styles.css">
-    <script src="https://kit.fontawesome.com/a344c1290e.js" crossorigin="anonymous"></script>
-    <title>EruditeTest</title>
-</head>
-
-<body>
-        <header>
-            <h1><a class="link__main" href="#">Erudite</a></h1>
-            <div class="account">
-                <p class="account__login">user-user</p>
-                <div class="dropdown">
-                    <p class="account__arrow"> <i class="fas fa-sort-down"></i> </p>
-                        <ul class="dropdown__list account__user">
-                            <li class="user__area"><a href="#">Личный кабинет</a> </li>
-                            <li class="exit"><a href="#">Выйти</a></li>
-                        </ul>
-                </div>
-            </div>
-        </header>
-        <div class="container">
-            <h2 id="my-records">Ваши рекорды</h2>
+const personAreaTemplate = `
+<h2 id="my-records">Ваши рекорды</h2>
             <table class="records">
                 <tr class="table-title">
                     <th class="table-title-thems">Темы</th>
@@ -76,9 +51,6 @@
                 <button class="button-test" type="submit">Пройти тест</button>
                 <button class="button-new-test" type="submit">Создать свой тест</button>
             </div>
+`;
 
-        </div>
-        <script type="module" src="./js/script.js"></script>
-    </body>
-    
-    </html>
+export default personAreaTemplate;

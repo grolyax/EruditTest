@@ -1,4 +1,4 @@
-const template = `
+const registrationTemplate = `
 <div class="registration-form">
 <div class="photo-sequence">
     <img class="imagesLine" src="/pictures/imagesMain/geography.jpg" height="108px" width="auto" alt="geography">
@@ -26,4 +26,4 @@ const template = `
 </div>
 `;
 
-export default template;
+export default registrationTemplate;

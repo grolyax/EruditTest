@@ -4,4 +4,4 @@ renderPage();
 
 window.addEventListener('popstate', () => {
   renderPage();
-});
+}); 
