@@ -17,27 +17,23 @@ header {
   padding-left: 24px;
   padding-right: 24px;
   box-shadow: 5px 8px 10px #012913; }
-  header .account__dropdown {
-    display: flex;
-    justify-content: space-between;
+  header .dropdown {
+    position: relative;
+    display: inline-block;
     width: 150px;
     height: 30px;
     background-color: #698c58;
     border: 0.5px solid #3b5e29;
     border-radius: 5px;
     box-shadow: 2px 2px 2px #243e16; }
-    header .account__dropdown p {
+    header .dropdown .account__login, header .dropdown .fa-sort-down {
+      padding-left: 10pt; }
+    header .dropdown p {
       margin: 5px 0;
       text-align: center;
       color: #e9f29b; }
-  header .dropdown {
-    position: relative;
-    display: inline-block;
-    width: 30px;
-    height: 30px;
-    background-color: #698c58;
-    border-left: 1px solid #3b5e29;
-    border-radius: 0 5px 5px 0; }
+    header .dropdown .account__arrow {
+      margin: 0; }
     header .dropdown .dropdown__list {
       position: absolute;
       display: none;
