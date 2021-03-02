@@ -5,7 +5,7 @@ import { getListIdByUrl } from './utils.js'
 import currentUser from './current-user.js';
 import renderMainStart from './render/renderMainStart.js';
 import renderNextStartTrue from './render/renderAnswerTrue.js';
-import renderNextStartFaulse from './render/renderAnswerFaulse.js';
+import renderNextStartFalse from './render/renderAnswerFalse.js';
 import renderTestText from './render/render-test-text.js';
 import renderTestPictures from './render/render-test-pictures.js';
 //import renderMainPersonal from '';
@@ -18,7 +18,7 @@ const INDEX_URLS = ['/', '/index.html'];
 const REGISTRATION_URL = '/registration';
 const LOGIN_URL = '/login';
 const STARTTRUE_URL = '/mainStartNextTrue';
-const STARTFAULSE_URL = '/mainStartNextFaulse';
+const STARTFalse_URL = '/mainStartNextFalse';
 
 const LIST_OFLIST_URL = '/listOfTests'; // проверочный - потом убрать и исправить
 const TEST_TEXT_URL = '/testText';
@@ -63,8 +63,8 @@ export function renderPage() {
     return;
     }
 
-    if (currentUrl === STARTFAULSE_URL) {
-      renderNextStartFaulse();
+    if (currentUrl === STARTFalse_URL) {
+      renderNextStartFalse();
 
     return;
     }

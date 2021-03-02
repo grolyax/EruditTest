@@ -6,12 +6,12 @@ const mainStartTemplate = `
     </div>
     <div class="field__value">
         <div class="pair__values">
-            <a href="/mainStartNextFaulse" class="button__value value1 option" type="submit"></a>
-            <a href="/mainStartNextFaulse" class="button__value value2 option" type="submit"></a>
+            <button class="button__value value1 option" type="submit"></button>
+            <button class="button__value value2 option" type="submit"></button>
         </div>
         <div class="pair__values">
-            <a href="/mainStartNextTrue" class="button__value value3 option" type="submit"></a>
-            <a href="/mainStartNextTrue" class="button__value value4 option" type="submit"></a>
+            <button class="button__value value3 option" type="submit"></button>
+            <button class="button__value value4 option" type="submit"></button>
         </div>
     </div>
     </div>
