@@ -1,7 +1,7 @@
 import renderTestsList from './render/render-list-of-test.js';
 import renderLogin from './render/render-login.js';
 import renderRegistration from './render/render-registration.js';
-import { getListIdByUrl } from './utils.js'
+import { getListIdByUrl } from './utils/getListByUrl.js';
 import currentUser from './current-user.js';
 import renderMainStart from './render/renderMainStart.js';
 import renderNextStartTrue from './render/renderAnswerTrue.js';
@@ -18,7 +18,7 @@ const INDEX_URLS = ['/', '/index.html'];
 const REGISTRATION_URL = '/registration';
 const LOGIN_URL = '/login';
 const STARTTRUE_URL = '/mainStartNextTrue';
-const STARTFalse_URL = '/mainStartNextFalse';
+const STARTFALSE_URL = '/mainStartNextFalse';
 
 const LIST_OFLIST_URL = '/listOfTests'; // проверочный - потом убрать и исправить
 const TEST_TEXT_URL = '/testText';
@@ -63,7 +63,7 @@ export function renderPage() {
     return;
     }
 
-    if (currentUrl === STARTFalse_URL) {
+    if (currentUrl === STARTFALSE_URL) {
       renderNextStartFalse();
 
     return;
