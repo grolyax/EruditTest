@@ -6,8 +6,7 @@ import currentUser from './current-user.js';
 import renderMainStart from './render/renderMainStart.js';
 import renderNextStartTrue from './render/renderAnswerTrue.js';
 import renderNextStartFalse from './render/renderAnswerFalse.js';
-import renderTestText from './render/render-test-text.js';
-import renderTestPictures from './render/render-test-pictures.js';
+import renderTest from './render/renderTest.js';
 //import renderMainPersonal from '';
 
 
@@ -21,8 +20,7 @@ const STARTTRUE_URL = '/mainStartNextTrue';
 const STARTFALSE_URL = '/mainStartNextFalse';
 
 const LIST_OFLIST_URL = '/listOfTests'; // проверочный - потом убрать и исправить
-const TEST_TEXT_URL = '/testText';
-const TEST_PICTURE_URL = '/testPicture';
+const TEST_URL = '/test';
 
 export function renderPage() {
     const { pathname: currentUrl } = window.location;
@@ -43,19 +41,11 @@ export function renderPage() {
       return
     }
 
-    if (currentUrl === TEST_TEXT_URL) { //временно, потом убрать
-      renderTestText();
+    if (currentUrl === TEST_URL) { //временно, потом убрать
+      renderTest();
 
       return
     }
-
-
-    if (currentUrl === TEST_PICTURE_URL) { //временно, потом убрать
-      renderTestPictures();
-
-      return
-    }
-  
 
     if (currentUrl === STARTTRUE_URL) {
       renderNextStartTrue();

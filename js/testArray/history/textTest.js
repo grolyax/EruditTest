@@ -1,4 +1,4 @@
-const textQuiz = [
+export const textQuiz = [
     {
         question: 'Каким народом были изобретены арабские цифры?',
         values: [
@@ -229,4 +229,4 @@ const textQuiz = [
         ],
         trueValue: 3  
     }
-]
+];

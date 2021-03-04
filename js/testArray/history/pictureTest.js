@@ -1,4 +1,4 @@
-const imgQuiz = [
+export const imgQuiz = [
     {
         question: 'Этот политический деятель написал более 500 картин, 50 из которых были выставлены на профессиональном уровне. Пикассо говорил, что политик мог бы выбрать искусство в качестве карьеры. Как зовут этого человека?',
         values: [
@@ -69,7 +69,7 @@ const imgQuiz = [
         ],
         trueValue: 3  
     }
-]
+];
 
 /* 
 let src = 'http://habrastorage.org/getpro/toster/6ec5a678/f246/4a66/6ec5a678-f246-4a66-93aa-9d23a154c62c/gruffi.gif';
