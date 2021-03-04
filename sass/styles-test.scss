@@ -24,6 +24,8 @@
     list-style-type: none;
     img {
         margin: 10px 15px 5px 5px;
+        width: auto;
+        height: 120px;
     }
 }
 
@@ -62,8 +64,9 @@
     display: flex;
     justify-content: space-between;
     padding: 5px 20px;
-    a {
-        text-decoration: none;
+    .navigation {
+        border: none;
+        background-color: rgba($color: #ffffff, $alpha: 0);
         color: #58764a;
         font-size: 20px;
         i {

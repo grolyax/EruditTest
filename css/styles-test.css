@@ -20,7 +20,9 @@
   padding: 10px 0;
   list-style-type: none; }
   .test__answer img {
-    margin: 10px 15px 5px 5px; }
+    margin: 10px 15px 5px 5px;
+    width: auto;
+    height: 120px; }
 
 .test__answer__text {
   list-style-type: none;
@@ -50,11 +52,12 @@
   display: flex;
   justify-content: space-between;
   padding: 5px 20px; }
-  .navigator a {
-    text-decoration: none;
+  .navigator .navigation {
+    border: none;
+    background-color: rgba(255, 255, 255, 0);
     color: #58764a;
     font-size: 20px; }
-    .navigator a i {
+    .navigator .navigation i {
       font-size: 30px;
       padding: 5px 10px; }
   .navigator .accept {

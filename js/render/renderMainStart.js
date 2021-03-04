@@ -1,7 +1,7 @@
 
 import mainStartTemplate from '../templates/pages/mainStart/index.js';
 import headerAccountTemplate from '../templates/pages/headerAccount/index.js';
-import { createEventListener } from '../utils/eventListener.js'
+import { navigateToUrl } from '../routing.js';
 
 const startQuiz = [
     {
@@ -35,6 +35,20 @@ const startQuiz = [
         trueValue: 2
     },
 ];
+
+export const createEventListener = (indexOfQuestion) => {
+    const fieldValue = document.querySelector('.field__value');
+
+    fieldValue.addEventListener('click', (event) => {
+
+        if(event.target.innerText === startQuiz[indexOfQuestion].values[startQuiz[indexOfQuestion].trueValue]) {
+            navigateToUrl('/mainStartNextTrue');
+        } else if(event.target.tagName === 'BUTTON') {
+
+            navigateToUrl('/mainStartNextFalse');
+        } 
+    })
+};
 
 function renderStartTest() {
     

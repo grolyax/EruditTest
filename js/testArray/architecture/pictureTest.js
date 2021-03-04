@@ -1,71 +1,71 @@
 const imgQuiz = [
     {
-        question: 'Этот политический деятель написал более 500 картин, 50 из которых были выставлены на профессиональном уровне. Пикассо говорил, что политик мог бы выбрать искусство в качестве карьеры. Как зовут этого человека?',
+        question: 'Усыпальница жены падишаха Шах-Джахана Тадж-Махал?',
         values: [
-            './picture/imagesHistory/0/churchill.jpg',
-            './picture/imagesHistory/0/gitler.jpg',
-            './picture/imagesHistory/0/roosevelt.jpg',
-            './picture/imagesHistory/0/Gaulle.jpg',
+            './picture/imagesArchitecture/0/mavzoley.png',
+            './picture/imagesArchitecture/0/pyramida.png',
+            './picture/imagesArchitecture/0/Tadzh-Mahal.png',
+            './picture/imagesArchitecture/0/lenin.jpg',
         ],
         trueValue: 0  
     },
     {
         question: 'Какая картина выполнена Иеронимом Босхом?',
         values: [
-            './picture/imagesHistory/1/dali.jpg',
-            './picture/imagesHistory/1/bosch.jpg',
-            './picture/imagesHistory/1/Moreau.jpg',
-            './picture/imagesHistory/1/Yerka.jpg',
+            './picture/imagesArchitecture/0/mavzoley.png',
+            './picture/imagesArchitecture/0/pyramida.png',
+            './picture/imagesArchitecture/0/Tadzh-Mahal.png',
+            './picture/imagesArchitecture/0/lenin.jpg',
         ],
         trueValue: 1  
     },
     {
         question: 'Какая картина отображает события "Ледового побоища"?',
         values: [
-            './picture/imagesHistory/2/grunvald.jpg',
-            './picture/imagesHistory/2/puatje.jpg',
-            './picture/imagesHistory/2/icebattle.jpg',
-            './picture/imagesHistory/2/suvorov.jpg',
+            './picture/imagesHistory/2/неледовое.jpeg',
+            './picture/imagesHistory/2/неледовое.jpeg',
+            './picture/imagesHistory/2/ледовое.jpeg',
+            './picture/imagesHistory/2/неледовое.jpeg',
         ],
         trueValue: 2  
     },
     {
         question: 'Кто сказал: «Принцип «око за око» сделает весь мир слепым»?',
         values: [
-            './picture/imagesHistory/3/lenon.jpg',
-            './picture/imagesHistory/3/tolstoy.jpg',
-            './picture/imagesHistory/3/Luter_king.jpg',
-            './picture/imagesHistory/3/gandi.jpg',
+            './picture/imagesHistory/3/неганди.jpeg',
+            './picture/imagesHistory/3/неганди.jpeg',
+            './picture/imagesHistory/3/неганди.jpeg',
+            './picture/imagesHistory/3/ганди.jpeg',
         ],
         trueValue: 3  
     },
     {
         question: 'Кто получил прозвище «бабушка Европы»?',
         values: [
-            './picture/imagesHistory/4/victoria.jpg',
-            './picture/imagesHistory/4/ekaterina.jpg',
-            './picture/imagesHistory/4/elisaveta.jpg',
-            './picture/imagesHistory/4/merkel.jpg',
+            './picture/imagesHistory/4/виктория.jpeg',
+            './picture/imagesHistory/4/невиктория.jpeg',
+            './picture/imagesHistory/4/невиктория.jpeg',
+            './picture/imagesHistory/4/невиктория.jpeg',
         ],
         trueValue: 0  
     },
     {
         question: 'Кто получил прозвище «Беспокойный Теодор»?',
         values: [
-            './picture/imagesHistory/5/draiser.jpg',
-            './picture/imagesHistory/5/rusvelt.jpg',
-            './picture/imagesHistory/5/narbut.jpg',
-            './picture/imagesHistory/5/bolivar.jpg',
+            './picture/imagesHistory/5/не.jpeg',
+            './picture/imagesHistory/5/рузвельт.jpeg',
+            './picture/imagesHistory/5/не.jpeg',
+            './picture/imagesHistory/5/не.jpeg',
         ],
         trueValue: 1  
     },
     {
         question: 'Кому принадлежит фраза «Атомная бомба - бумажный тигр...»?',
         values: [
-            './picture/imagesHistory/6/kastro.jpg',
-            './picture/imagesHistory/6/Khrushchev.jpg',
-            './picture/imagesHistory/6/chen_ur.jpg',
-            './picture/imagesHistory/6/mao.jpg',
+            './picture/imagesHistory/6/не.jpeg',
+            './picture/imagesHistory/6/не.jpeg',
+            './picture/imagesHistory/6/не.jpeg',
+            './picture/imagesHistory/6/маоjpeg',
         ],
         trueValue: 3  
     }

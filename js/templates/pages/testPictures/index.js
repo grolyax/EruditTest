@@ -6,7 +6,7 @@ const TestPicturesTemplate = `
                         <span class="thems__test">Architecture</span>
                     </div>
                     <ol class="theme__question">
-                        <li class="test__question">Усыпальница жены падишаха Шах-Джахана Тадж-Махал?</li>
+                        <li class="test__question"></li>
                         <ol class="test__answer">
                             <li > 
                                 <input type="radio" name="answer" value="a1">
