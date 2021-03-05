@@ -1,95 +1,72 @@
-const imgQuiz = [
+export let  imgQuiz = [
     {
-        question: 'Этот политический деятель написал более 500 картин, 50 из которых были выставлены на профессиональном уровне. Пикассо говорил, что политик мог бы выбрать искусство в качестве карьеры. Как зовут этого человека?',
+        question: '«Цель оправдывает средства», кому принадлежит эта фраза',
         values: [
-            './picture/imagesHistory/0/churchill.jpeg',
-            './picture/imagesHistory/0/gitler.jpeg',
-            './picture/imagesHistory/0/roosevelt.jpeg',
-            './picture/imagesHistory/0/goll.jpeg',
-        ],
-        trueValue: 0  
-    },
-    {
-        question: 'Какая картина выполнена Иеронимом Босхом?',
-        values: [
-            './picture/imagesHistory/1/небосх.jpeg',
-            './picture/imagesHistory/1/босх.jpeg',
-            './picture/imagesHistory/1/небосх.jpeg',
-            './picture/imagesHistory/1/небосх.jpeg',
-        ],
-        trueValue: 1  
-    },
-    {
-        question: 'Какая картина отображает события "Ледового побоища"?',
-        values: [
-            './picture/imagesHistory/2/неледовое.jpeg',
-            './picture/imagesHistory/2/неледовое.jpeg',
-            './picture/imagesHistory/2/ледовое.jpeg',
-            './picture/imagesHistory/2/неледовое.jpeg',
+            './picture/imagesPolitic/0/Hobbs.jpg',
+            './picture/imagesPolitic/0/Locke.jpg',
+            './picture/imagesPolitic/0/Machiavelli.jpg',
+            './picture/imagesPolitic/0/Montesque.jpg',
         ],
         trueValue: 2  
     },
     {
-        question: 'Кто сказал: «Принцип «око за око» сделает весь мир слепым»?',
+        question: 'Какая из этих эмблем представляет организацию НАТО?',
         values: [
-            './picture/imagesHistory/3/неганди.jpeg',
-            './picture/imagesHistory/3/неганди.jpeg',
-            './picture/imagesHistory/3/неганди.jpeg',
-            './picture/imagesHistory/3/ганди.jpeg',
-        ],
-        trueValue: 3  
-    },
-    {
-        question: 'Кто получил прозвище «бабушка Европы»?',
-        values: [
-            './picture/imagesHistory/4/виктория.jpeg',
-            './picture/imagesHistory/4/невиктория.jpeg',
-            './picture/imagesHistory/4/невиктория.jpeg',
-            './picture/imagesHistory/4/невиктория.jpeg',
-        ],
-        trueValue: 0  
-    },
-    {
-        question: 'Кто получил прозвище «Беспокойный Теодор»?',
-        values: [
-            './picture/imagesHistory/5/не.jpeg',
-            './picture/imagesHistory/5/рузвельт.jpeg',
-            './picture/imagesHistory/5/не.jpeg',
-            './picture/imagesHistory/5/не.jpeg',
+            './picture/imagesPolitic/1/sng.jpg',
+            './picture/imagesPolitic/1/nato.jpg',
+            './picture/imagesPolitic/1/odkb.jpg',
+            './picture/imagesPolitic/1/oon.jpg',
         ],
         trueValue: 1  
     },
     {
-        question: 'Кому принадлежит фраза «Атомная бомба - бумажный тигр...»?',
+        question: 'В каком из этих здание НЕ заседает высший представительный орган власти?',
         values: [
-            './picture/imagesHistory/6/не.jpeg',
-            './picture/imagesHistory/6/не.jpeg',
-            './picture/imagesHistory/6/не.jpeg',
-            './picture/imagesHistory/6/маоjpeg',
+            './picture/imagesPolitic/2/vestminsterskiy_dvorec.jpg',
+            './picture/imagesPolitic/2/Capitol.jpg',
+            './picture/imagesPolitic/2/moskow.jpg',
+            './picture/imagesPolitic/2/Reihstag.jpg',
+        ],
+        trueValue: 2  
+    },
+    {
+        question: 'Кто сказал: «Лучший аргумент против демократии — это пятиминутная беседа со средним избирателем.»?',
+        values: [
+            './picture/imagesPolitic/3/roosevelt.jpg',
+            './picture/imagesPolitic/3/Gaulle.jpg',
+            './picture/imagesPolitic/3/gitler.jpg',
+            './picture/imagesPolitic/3/churchill.jpg',
+        ],
+        trueValue: 3  
+    },
+    {
+        question: 'Кто сказал: «В политике приходится предавать свою страну или своих избирателей. Я предпочитаю второе',
+        values: [
+            './picture/imagesPolitic/4/Gaulle.jpg',
+            './picture/imagesPolitic/4/churchill.jpg',
+            './picture/imagesPolitic/4/merkel.jpg',
+            './picture/imagesPolitic/4/rusvelt.jpg',
+        ],
+        trueValue: 0  
+    },
+    {
+        question: 'Какая из карикатур не относится к Карибскому кризису 1962 г.?',
+        values: [
+            './picture/imagesPolitic/5/caribn1jpg',
+            './picture/imagesPolitic/5/bigstick.jpg',
+            './picture/imagesPolitic/5/caribn2.jpg',
+            './picture/imagesPolitic/5/caribn3.jpg',
+        ],
+        trueValue: 1  
+    },
+    {
+        question: 'Какая из карикатур отражает так называемый "восточный вопрос"?',
+        values: [
+            './picture/imagesPolitic/6/berlin.jpg',
+            './picture/imagesPolitic/6/china.jpg',
+            './picture/imagesPolitic/6/israel.jpg',
+            './picture/imagesPolitic/6/balkan1.jpg',
         ],
         trueValue: 3  
     }
-]
-
-/* 
-let src = 'http://habrastorage.org/getpro/toster/6ec5a678/f246/4a66/6ec5a678-f246-4a66-93aa-9d23a154c62c/gruffi.gif';
-document.getElementById('click').onclick = function() {
-    document.getElementById('user-avatar').src = src;
-} */
-
-
-
-// var img = document.createElement("IMG");
-// img.src = "upload/medialibrary/e60/e605f52693f032eb03f46ffde79ef5bf.jpg";
-
-// test.innerHTML += "<img src=\"" + img + "\" width=\"200\" height=\"200\">";
-/*
- answers.push(
-                    '<label>'
-                        + '<input type="radio" name="question'+i+'" value="'+letter+'">'
-                        + letter + ': '
-                        + questions[i].answers[letter]
-                    + '</label>'
-                );
-*/
-               
+];

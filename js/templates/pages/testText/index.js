@@ -10,19 +10,19 @@ const TestTextTemplate = `
                         <ol class="test__answer__text">
                             <li class="value1"> 
                                 <input type="radio" name="answer" value="value1">
-                                <div class="box__answer"><p  class="text__answer"></p></div>
+                                <div class="box__answer"><p  class="text__answer1"></p></div>
                             </li>
                             <li class="value2">
                                 <input type="radio" name="answer" value="value2">
-                                <div class="box__answer"><p  class="text__answer"></p></div>
+                                <div class="box__answer"><p  class="text__answer2"></p></div>
                             </li>
                             <li class="value3">
                                 <input type="radio" name="answer" value="value3" >
-                                <div class="box__answer"><p class="text__answer"></p></div>
+                                <div class="box__answer"><p class="text__answer3"></p></div>
                             </li>
                             <li class="value4">
                                 <input type="radio" name="answer" value="value4">
-                                <div class="box__answer"><p class="text__answer"></p></div>
+                                <div class="box__answer"><p class="text__answer4"></p></div>
                             </li>
                         </ol>
                     </ol>

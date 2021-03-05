@@ -1,4 +1,4 @@
-export const textQuiz = [
+export let textQuiz = [
     {
         question: 'Каким народом были изобретены арабские цифры?',
         values: [
