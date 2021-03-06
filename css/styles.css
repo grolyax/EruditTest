@@ -210,35 +210,41 @@ header {
     color: #fefac0; }
 
 .task__test {
+  transform: translateY(-20px);
   display: flex;
   justify-content: space-between;
   border-bottom: 1px solid #243e16;
   color: #355723; }
-  .task__test .number__question {
+  .task__test .questions__tracker {
     font-style: italic; }
 
 .theme__question {
+  margin-top: 0;
   padding-top: 10px;
   padding-left: 30px;
   font-size: 20px;
   color: #192b10;
   list-style-type: none; }
+  .theme__question .test__question {
+    height: 70px; }
 
 .test__answer {
   display: flex;
   flex-wrap: wrap;
   width: 100%;
-  padding: 10px 0;
+  padding: 20px 0;
   list-style-type: none; }
-  .test__answer img {
-    margin: 10px 15px 5px 5px;
-    width: auto;
-    height: 120px; }
+  .test__answer li {
+    display: flex; }
+    .test__answer li img {
+      margin: 10px 15px 5px 5px;
+      width: auto;
+      height: 120px; }
 
 .test__answer__text {
   list-style-type: none;
   width: 100%;
-  padding: 60px 0 25px 0; }
+  padding: 20px 0 25px 0; }
   .test__answer__text li {
     display: flex;
     margin: 0; }
@@ -251,9 +257,8 @@ header {
       border: 1px solid #627a56;
       border-radius: 7px;
       font-size: 16px;
-      margin: 10px 0; }
-      .test__answer__text li .box__answer p {
-        margin: 5px 5px 5px 10px; }
+      margin: 10px 0;
+      padding: 0 5px 0 10px; }
 
 .progress__bar {
   width: 100%;
@@ -263,21 +268,14 @@ header {
   display: flex;
   justify-content: space-between;
   padding: 5px 20px; }
-  .navigator .navigation {
-    border: none;
-    background-color: rgba(255, 255, 255, 0);
-    color: #58764a;
-    font-size: 20px; }
-    .navigator .navigation i {
-      font-size: 30px;
-      padding: 5px 10px; }
   .navigator .accept {
     width: 160px;
     height: 40px;
     background-color: #3f654f;
     color: #fefac0;
     border-radius: 10px;
-    font-size: 18px; }
+    font-size: 18px;
+    outline: none; }
 
 .records__test {
   border: 1px solid #1e2919;

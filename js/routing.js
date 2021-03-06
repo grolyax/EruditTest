@@ -19,7 +19,7 @@ const LOGIN_URL = '/login';
 const STARTTRUE_URL = '/mainStartNextTrue';
 const STARTFALSE_URL = '/mainStartNextFalse';
 
-const LIST_OFLIST_URL = '/listOfTests'; // проверочный - потом убрать и исправить
+const LIST_OFTEST_URL = '/listOfTests'; // проверочный - потом  исправить
 const TEST_URL = '/test';
 
 export function renderPage() {
@@ -35,13 +35,13 @@ export function renderPage() {
       return;
     }
 
-    if (currentUrl === LIST_OFLIST_URL) { //временно, потом убрать
+    if (currentUrl === LIST_OFTEST_URL) { //временно, потом добавить условие, что только для вошедших в аккаунт
       renderTestsList();
 
       return
     }
 
-    if (currentUrl === TEST_URL) { //временно, потом убрать
+    if (currentUrl === TEST_URL) { //временно, потом расставить по темам и на страницу рендера списка
       renderTest();
 
       return
