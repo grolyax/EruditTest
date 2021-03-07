@@ -33,20 +33,3 @@
         }
     }
 }
-
-.button-tests {
-    
-display: flex;
-justify-content: space-around;
-    .button-test, .button-new-test {
-        background-color: #698c58;
-        border: 1px solid #355723;
-        border-radius: 10px;
-        width: 200px;
-        height: 40px;  
-        box-shadow: 2px 2px 2px #16240e;  
-        font-size: 18px;
-        text-shadow: 2px 2px 2px #062515;
-        color: #fefac0;
-    }
-}

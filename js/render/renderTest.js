@@ -4,9 +4,16 @@ import TestPicturesTemplate from '../templates/pages/testPictures/index.js';
 import HeaderCurrentUserTemplate from '../templates/pages/headerCurrentUser/index.js';
 import QuestionsCountTemplate from '../templates/pages/questionsCount/index.js';
 import FooterTestForm from '../templates/pages/footer-test/index.js';
-import { textQuiz } from '../testArray/history/textTest.js';
-import { pictQuiz } from '../testArray/history/pictureTest.js';
 import { navigateToUrl } from '../routing.js';
+import pictureTestList from '../testArray/pictureTestList.js';
+import textTestList from '../testArray/textTestList.js';
+
+let textQuiz = [];
+let pictQuiz = [];
+let questionsUsed = [];
+let questionsUsed2 = [];
+let indexOfQuestion;
+let score = 0;
 
 const renderTestPictures = () => {
     const rootOl = document.querySelector('.theme__question');
@@ -17,12 +24,6 @@ const renderTestText = () => {
     const rootOl = document.querySelector('.theme__question');
     rootOl.innerHTML = TestTextTemplate;
 };
-
-
-let questionsUsed = [];
-let questionsUsed2 = [];
-let indexOfQuestion;
-let score = 0;
 
 const randomQuestion = () => {
 
@@ -54,7 +55,6 @@ const randomQuestion = () => {
             indexOfQuestion = randomNumber;
             renderValueTextTest();
         }
-
     };
 
     questionsUsed.push(indexOfQuestion);
@@ -62,7 +62,6 @@ const randomQuestion = () => {
     const numberOfQuestion = document.getElementById('number__question');
     numberOfQuestion.innerText = questionsUsed.length;
 };
-
 
 function renderValueTextTest() {
 
@@ -113,7 +112,6 @@ const randomPictQuestion = () => {
     numberOfQuestion.innerText = 15 + questionsUsed2.length;
 };
 
-
 function renderValuePictTest() {
     const question = document.querySelector('.test__question');
 
@@ -127,52 +125,54 @@ function renderValuePictTest() {
     img2.src = pictQuiz[indexOfQuestion].values[1];
     img3.src = pictQuiz[indexOfQuestion].values[2];
     img4.src = pictQuiz[indexOfQuestion].values[3];
-
 }
 
 const checkCorrectness = () => {
-    
+
     const inputArray = document.querySelectorAll('input[type="radio"]');
     inputArray.forEach(input => {
         const numberOfQuestion = document.getElementById('number__question');
-        if(numberOfQuestion.innerText <= 15) {
-            if(input.checked && input.id[input.id.length - 1] - 1 === textQuiz[indexOfQuestion].trueValue) {
+        if (numberOfQuestion.innerText <= 15) {
+            if (input.checked && input.id[input.id.length - 1] - 1 === textQuiz[indexOfQuestion].trueValue) {
                 score++;
-            } 
+            }
         } else {
-            if(input.checked && input.id[input.id.length - 1] - 1 === pictQuiz[indexOfQuestion].trueValue) {
+            if (input.checked && input.id[input.id.length - 1] - 1 === pictQuiz[indexOfQuestion].trueValue) {
                 score++;
-            } 
+            }
         }
         input.checked = false;
     })
 
-   
     console.log(score);
 };
 
-
 const createButtonListeners = () => {
     const btnAccept = document.querySelector('.accept');
-    const progressBarElement = document.querySelector(".progress__bar");  
+    const progressBarElement = document.querySelector(".progress__bar");
     btnAccept.addEventListener('click', (event) => {
         event.preventDefault();
         event.stopPropagation();
 
         const inputArray = document.querySelectorAll('input[type="radio"]');
         inputArray.forEach(input => {
-            if(input.checked) {
+            if (input.checked) {
                 checkCorrectness();
                 randomQuestion();
-             
+
                 progressBarElement.style.width = `${progressBarElement.clientWidth + 20}px`;
             }
-         })
+        })
     });
 };
 
 export default function renderTest() {
-    const rootDiv = document.querySelector('.container'); 
+    let topic = window.location.href.match('topic=(?<topic>.+)').groups.topic;
+    
+    textQuiz = textTestList[topic];
+    pictQuiz = pictureTestList[topic];
+
+    const rootDiv = document.querySelector('.container');
     rootDiv.innerHTML = TestTemplate;
 
     const questionsCount = document.querySelector('.questions__count');
@@ -182,6 +182,9 @@ export default function renderTest() {
     headerDiv.innerHTML = HeaderCurrentUserTemplate;
     questionsCount.innerHTML = QuestionsCountTemplate;
     footer.innerHTML = FooterTestForm;
+
+    const themElement = document.querySelector('.thems__test');
+    themElement.innerText = topic;
     createButtonListeners();
     renderTestText();
     randomQuestion();

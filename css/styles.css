@@ -195,26 +195,15 @@ header {
   .records tr th {
     border: 1px solid #24311f; }
 
-.button-tests {
-  display: flex;
-  justify-content: space-around; }
-  .button-tests .button-test, .button-tests .button-new-test {
-    background-color: #698c58;
-    border: 1px solid #355723;
-    border-radius: 10px;
-    width: 200px;
-    height: 40px;
-    box-shadow: 2px 2px 2px #16240e;
-    font-size: 18px;
-    text-shadow: 2px 2px 2px #062515;
-    color: #fefac0; }
-
 .questions__count {
   transform: translateY(-20px);
   display: flex;
   justify-content: space-between;
   border-bottom: 1px solid #243e16;
   color: #355723; }
+  .questions__count .thems__test {
+    text-transform: capitalize;
+    margin: 10px 0; }
   .questions__count .questions__tracker {
     font-style: italic; }
 
@@ -222,7 +211,7 @@ header {
   transform: translateY(-20px);
   margin-top: 0;
   padding-top: 10px;
-  padding-left: 30px;
+  padding-left: 10px;
   font-size: 20px;
   color: #192b10;
   list-style-type: none; }
@@ -255,8 +244,8 @@ header {
     .test__answer__text li input {
       margin: 20px 20px 0 0; }
     .test__answer__text li .box__answer {
-      width: 350px;
-      height: 30px;
+      width: 400px;
+      height: 40px;
       background-color: white;
       border: 1px solid #627a56;
       border-radius: 7px;
@@ -270,7 +259,7 @@ header {
   padding: 0; }
 
 .empty {
-  height: 40px; }
+  height: 0px; }
 
 .img__test {
   display: flex;
@@ -315,6 +304,10 @@ header {
     padding: 8px 10px;
     width: 125px; }
 
+.test__result {
+  margin: 0 0 10px 0;
+  padding-left: 10px; }
+
 .account__buttons {
   display: flex;
   width: 195px;
@@ -355,7 +348,34 @@ header {
 
 .button__value:hover {
   transform: translateY(-1px);
-  background-color: #fcf485; }
+  background-color: #fcf485;
+  cursor: pointer; }
+
+.button-tests {
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-around; }
+  .button-tests .button-test, .button-tests .button-new-test {
+    text-decoration: none;
+    background-color: #698c58;
+    border: 1px solid #355723;
+    border-radius: 10px;
+    width: 200px;
+    height: 40px;
+    box-shadow: 2px 2px 2px #16240e;
+    font-size: 18px;
+    text-shadow: 2px 2px 2px #062515;
+    color: #fefac0;
+    text-align: center;
+    padding-top: 10px; }
+
+.button:hover {
+  transform: translateY(-1px);
+  background: #729e5c;
+  cursor: pointer; }
+
+label:hover {
+  cursor: pointer; }
 
 html, body {
   margin: 0;
