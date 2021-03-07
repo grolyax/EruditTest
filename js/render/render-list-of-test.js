@@ -8,3 +8,4 @@ export default function renderTestsList() {
     headerDiv.innerHTML = headerCurrentUserTemplate;
     rootDiv.innerHTML = listOfTestTemplate;
 }
+

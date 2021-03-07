@@ -209,16 +209,17 @@ header {
     text-shadow: 2px 2px 2px #062515;
     color: #fefac0; }
 
-.task__test {
+.questions__count {
   transform: translateY(-20px);
   display: flex;
   justify-content: space-between;
   border-bottom: 1px solid #243e16;
   color: #355723; }
-  .task__test .questions__tracker {
+  .questions__count .questions__tracker {
     font-style: italic; }
 
 .theme__question {
+  transform: translateY(-20px);
   margin-top: 0;
   padding-top: 10px;
   padding-left: 30px;
@@ -228,11 +229,14 @@ header {
   .theme__question .test__question {
     height: 70px; }
 
+.pair__values {
+  display: flex;
+  justify-content: space-around; }
+
 .test__answer {
   display: flex;
-  flex-wrap: wrap;
   width: 100%;
-  padding: 20px 0;
+  padding-bottom: 20px;
   list-style-type: none; }
   .test__answer li {
     display: flex; }
@@ -260,7 +264,19 @@ header {
       margin: 10px 0;
       padding: 0 5px 0 10px; }
 
+.footer {
+  transform: translateY(-40px); }
+
+.empty {
+  height: 40px; }
+
+.img__test {
+  display: flex;
+  flex-direction: column;
+  padding-left: 0; }
+
 .progress__bar {
+  margin: 0 0 15px 0;
   width: 100%;
   border-top: 3px solid #d66a12; }
 
@@ -271,6 +287,7 @@ header {
   .navigator .accept {
     width: 160px;
     height: 40px;
+    margin-left: 150px;
     background-color: #3f654f;
     color: #fefac0;
     border-radius: 10px;
@@ -393,7 +410,8 @@ body {
     padding-top: 15px; }
     .main__field .field__value .pair__values {
       display: flex;
-      flex-direction: column; }
+      flex-direction: column;
+      justify-content: space-between; }
 
 .field__answer {
   width: 400px;

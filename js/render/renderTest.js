@@ -1,22 +1,21 @@
+import TestTemplate from '../templates/pages/pageTest/index.js';
 import TestTextTemplate from '../templates/pages/testText/index.js';
 import TestPicturesTemplate from '../templates/pages/testPictures/index.js';
-import headerCurrentUserTemplate from '../templates/pages/headerCurrentUser/index.js';
+import HeaderCurrentUserTemplate from '../templates/pages/headerCurrentUser/index.js';
+import QuestionsCountTemplate from '../templates/pages/questionsCount/index.js';
 import FooterTestForm from '../templates/pages/footer-test/index.js';
 import { textQuiz } from '../testArray/history/textTest.js';
 import { pictQuiz } from '../testArray/history/pictureTest.js';
+import { navigateToUrl } from '../routing.js';
 
 const renderTestPictures = () => {
-    const rootDiv = document.querySelector('.container');
-    rootDiv.innerHTML = TestPicturesTemplate;
-    const footer = document.querySelector('.footer');
-
-    footer.innerHTML = FooterTestForm;
-    createButtonListeners();
+    const rootOl = document.querySelector('.theme__question');
+    rootOl.innerHTML = TestPicturesTemplate;
 };
 
 const renderTestText = () => {
-    const rootDiv = document.querySelector('.container');
-    rootDiv.innerHTML = TestTextTemplate;
+    const rootOl = document.querySelector('.theme__question');
+    rootOl.innerHTML = TestTextTemplate;
 };
 
 let questionsUsed = [];
@@ -84,7 +83,7 @@ const randomPictQuestion = () => {
     let randomNumber2 = Math.floor(Math.random() * pictQuiz.length);
     let hitDuplicate2 = false;
 
-    if (questionsUsed2.length > 5) {
+    if (questionsUsed2.length > 4) {
         navigateToUrl('/resultTest');
     } else {
         if (questionsUsed2.length > 0) {
@@ -169,14 +168,17 @@ const createButtonListeners = () => {
 };
 
 export default function renderTest() {
+    const rootDiv = document.querySelector('.container'); 
+    rootDiv.innerHTML = TestTemplate;
 
-    renderTestText();
-    randomQuestion();
+    const questionsCount = document.querySelector('.questions__count');
     const headerDiv = document.querySelector('.account');
     const footer = document.querySelector('.footer');
 
-    headerDiv.innerHTML = headerCurrentUserTemplate;
+    headerDiv.innerHTML = HeaderCurrentUserTemplate;
+    questionsCount.innerHTML = QuestionsCountTemplate;
     footer.innerHTML = FooterTestForm;
     createButtonListeners();
-
+    renderTestText();
+    randomQuestion();
 };

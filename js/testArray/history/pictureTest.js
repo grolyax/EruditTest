@@ -1,6 +1,6 @@
 export let pictQuiz = [
     {
-        question: 'Этот политический деятель написал более 500 картин, 50 из которых были выставлены на профессиональном уровне. Пикассо говорил, что политик мог бы выбрать искусство в качестве карьеры. Как зовут этого человека?',
+        question: 'Этот политический деятель написал более 500 картин, 50 из которых были выставлены на профессиональном уровне.',
         values: [
             '../../pictures/imagesHistory/0/churchill.jpg',
             '../../pictures/imagesHistory/0/gitler.jpg',
@@ -52,7 +52,7 @@ export let pictQuiz = [
     {
         question: 'Кто получил прозвище «Беспокойный Теодор»?',
         values: [
-            '../../pictures/imagesHistory/5/draiser.jpg',
+            '../../pictures/imagesHistory/5/draizer.jpg',
             '../../pictures/imagesHistory/5/rusvelt.jpg',
             '../../pictures/imagesHistory/5/narbut.jpg',
             '../../pictures/imagesHistory/5/bolivar.jpg',

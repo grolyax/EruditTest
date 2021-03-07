@@ -1,5 +1,5 @@
-.task__test {
-    transform: translateY(-20px) ;
+.questions__count {
+    transform: translateY(-20px);
     display: flex;
     justify-content: space-between;
     border-bottom: 1px solid #243e16;
@@ -10,6 +10,7 @@
 }
 
 .theme__question {
+    transform: translateY(-20px);
     margin-top: 0;
     padding-top: 10px;
     padding-left: 30px;
@@ -20,12 +21,14 @@
         height: 70px;
     }
 }
-
+.pair__values {
+    display: flex;
+    justify-content: space-around;
+}
 .test__answer {
     display: flex;
-    flex-wrap: wrap;
     width: 100%;
-    padding: 20px 0;
+    padding-bottom: 20px;
     list-style-type: none;
     li {
         display: flex;
@@ -60,8 +63,20 @@
         }
     }
 }
+.footer {
+    transform: translateY(-40px);
+}
+.empty {
+    height: 40px;
+}
+.img__test {
+    display: flex;
+    flex-direction: column;
+    padding-left: 0;
+}
 
 .progress__bar {
+    margin: 0 0 15px 0;
     width: 100%;
     border-top: 3px solid #d66a12;
 }
@@ -73,6 +88,7 @@
     .accept {
         width: 160px;
         height: 40px;
+        margin-left: 150px;
         background-color: #3f654f;
         color: #fefac0;
         border-radius: 10px;
