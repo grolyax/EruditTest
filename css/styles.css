@@ -203,6 +203,7 @@ header {
   color: #355723; }
   .questions__count .thems__test {
     text-transform: capitalize;
+    padding-top: 5px;
     margin: 10px 0; }
   .questions__count .questions__tracker {
     font-style: italic; }

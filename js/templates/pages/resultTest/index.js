@@ -6,7 +6,7 @@ const resultTestTemplate = `
     <p class="test__result">Ваш результат: <span id="score"></span> из 20. Вы прекрасно разбираетесь в политике. Хотите попробовать ещё?</p>
     <div class="button-tests">
         <a href class="button-test button">Пройти тест ещё раз</a>
-        <a href="/listOfTest" class="button-new-test button">Выбор тестов</a>
+        <a href="/listOfTests" class="button-new-test button">Выбор тестов</a>
     </div>
 
     <table class="records__test">
