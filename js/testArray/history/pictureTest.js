@@ -70,26 +70,3 @@ export let pictQuiz = [
         trueValue: 3  
     }
 ];
-
-/* 
-let src = 'http://habrastorage.org/getpro/toster/6ec5a678/f246/4a66/6ec5a678-f246-4a66-93aa-9d23a154c62c/gruffi.gif';
-document.getElementById('click').onclick = function() {
-    document.getElementById('user-avatar').src = src;
-} */
-
-
-
-// var img = document.createElement("IMG");
-// img.src = "upload/medialibrary/e60/e605f52693f032eb03f46ffde79ef5bf.jpg";
-
-// test.innerHTML += "<img src=\"" + img + "\" width=\"200\" height=\"200\">";
-/*
- answers.push(
-                    '<label>'
-                        + '<input type="radio" name="question'+i+'" value="'+letter+'">'
-                        + letter + ': '
-                        + questions[i].answers[letter]
-                    + '</label>'
-                );
-*/
-               

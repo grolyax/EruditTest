@@ -65,6 +65,8 @@
 }
 .footer {
     transform: translateY(-40px);
+    margin: 0;
+    padding: 0;
 }
 .empty {
     height: 40px;
@@ -75,16 +77,11 @@
     padding-left: 0;
 }
 
-.progress__bar {
-    margin: 0 0 15px 0;
-    width: 100%;
-    border-top: 3px solid #d66a12;
-}
-
 .navigator {
     display: flex;
     justify-content: space-between;
-    padding: 5px 20px;
+    padding: 20px 20px 5px 20px;
+    border-top: 1px solid grey;
     .accept {
         width: 160px;
         height: 40px;
@@ -95,4 +92,20 @@
         font-size: 18px;
         outline: none;
     }
+
 }
+
+.progress__bar {
+    z-index: 2;
+    width: 20px;
+    background-color: rgb(240, 148, 111);
+    height: 3px;
+    margin: 0;
+    padding: 0;
+}
+
+.test__form {
+    overflow: hidden;
+}
+
+

@@ -265,7 +265,9 @@ header {
       padding: 0 5px 0 10px; }
 
 .footer {
-  transform: translateY(-40px); }
+  transform: translateY(-40px);
+  margin: 0;
+  padding: 0; }
 
 .empty {
   height: 40px; }
@@ -275,15 +277,11 @@ header {
   flex-direction: column;
   padding-left: 0; }
 
-.progress__bar {
-  margin: 0 0 15px 0;
-  width: 100%;
-  border-top: 3px solid #d66a12; }
-
 .navigator {
   display: flex;
   justify-content: space-between;
-  padding: 5px 20px; }
+  padding: 20px 20px 5px 20px;
+  border-top: 1px solid grey; }
   .navigator .accept {
     width: 160px;
     height: 40px;
@@ -293,6 +291,17 @@ header {
     border-radius: 10px;
     font-size: 18px;
     outline: none; }
+
+.progress__bar {
+  z-index: 2;
+  width: 20px;
+  background-color: #f0946f;
+  height: 3px;
+  margin: 0;
+  padding: 0; }
+
+.test__form {
+  overflow: hidden; }
 
 .records__test {
   border: 1px solid #1e2919;
@@ -368,6 +377,9 @@ body {
   justify-content: center;
   align-items: center;
   height: 100vh; }
+
+form {
+  padding-bottom: 0; }
 
 .container {
   display: flex;

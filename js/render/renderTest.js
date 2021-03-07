@@ -18,6 +18,7 @@ const renderTestText = () => {
     rootOl.innerHTML = TestTextTemplate;
 };
 
+
 let questionsUsed = [];
 let questionsUsed2 = [];
 let indexOfQuestion;
@@ -153,15 +154,18 @@ const checkCorrectness = () => {
 
 const createButtonListeners = () => {
     const btnAccept = document.querySelector('.accept');
-
+    const progressBarElement = document.querySelector(".progress__bar");  
     btnAccept.addEventListener('click', (event) => {
         event.preventDefault();
         event.stopPropagation();
+
         const inputArray = document.querySelectorAll('input[type="radio"]');
         inputArray.forEach(input => {
             if(input.checked) {
                 checkCorrectness();
                 randomQuestion();
+             
+                progressBarElement.style.width = `${progressBarElement.clientWidth + 20}px`;
             }
          })
     });
