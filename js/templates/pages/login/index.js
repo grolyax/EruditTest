@@ -8,7 +8,7 @@ const template = `
                 </div>
                 <form>
                     <label>Логин</label>
-                    <input name="email" placeholder="Введите Ваш электронный адрес" />
+                    <input name="user" placeholder="Введите Ваш электронный адрес" />
                     <span class="error"></span>
         
                     <label id="login">Пароль</label>

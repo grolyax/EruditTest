@@ -14,6 +14,7 @@
             background-color: #698c58;
             border: 1px solid #355723;
             border-radius: 10px;
+            text-decoration: none;
             p {
                 font-size: 24px;
                 padding-left: 20px;
@@ -26,5 +27,11 @@
                 color: #fefac0;
             }
         }
+        .theme:hover {
+            transform: translateY(-1px);
+            background-color: #577449;
+            cursor: pointer;   
+        }
     }
 }
+

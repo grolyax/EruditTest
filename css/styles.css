@@ -159,7 +159,8 @@ header {
       height: 70px;
       background-color: #698c58;
       border: 1px solid #355723;
-      border-radius: 10px; }
+      border-radius: 10px;
+      text-decoration: none; }
       .list__tests .list__left .theme p, .list__tests .list__right .theme p {
         font-size: 24px;
         padding-left: 20px; }
@@ -168,6 +169,10 @@ header {
         filter: opacity(75%); }
       .list__tests .list__left .theme p, .list__tests .list__right .theme p {
         color: #fefac0; }
+    .list__tests .list__left .theme:hover, .list__tests .list__right .theme:hover {
+      transform: translateY(-1px);
+      background-color: #577449;
+      cursor: pointer; }
 
 #my-records {
   margin: 0; }
@@ -284,7 +289,7 @@ header {
 
 .progress__bar {
   z-index: 2;
-  width: 20px;
+  width: 25px;
   background-color: #f0946f;
   height: 3px;
   margin: 0;

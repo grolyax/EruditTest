@@ -1,7 +1,7 @@
 import TestTemplate from '../templates/pages/pageTest/index.js';
 import TestTextTemplate from '../templates/pages/testText/index.js';
 import TestPicturesTemplate from '../templates/pages/testPictures/index.js';
-import HeaderCurrentUserTemplate from '../templates/pages/headerCurrentUser/index.js';
+import renderHeaderCurrentUser from '../render/renderHeaderCurrentUser.js';
 import QuestionsCountTemplate from '../templates/pages/questionsCount/index.js';
 import FooterTestForm from '../templates/pages/footer-test/index.js';
 import { navigateToUrl } from '../routing.js';
@@ -37,30 +37,30 @@ const randomQuestion = () => {
         return;
     } else {
         if (questionsUsed.length > 0) {
-            questionsUsed.forEach(item => {
-                if (item === randomNumber) {
-                    hitDuplicate = true;
-                }
-            });
-            if (hitDuplicate) {
-                randomQuestion();
-
-                return;
-            } else {
-                indexOfQuestion = randomNumber;
-                renderValueTextTest();
+        questionsUsed.forEach(item => {
+            if (item === randomNumber) {
+                hitDuplicate = true;
             }
-        };
-        if (questionsUsed.length === 0) {
+        });
+        if (hitDuplicate) {
+            randomQuestion();
+
+            return;
+        } else {
             indexOfQuestion = randomNumber;
             renderValueTextTest();
         }
     };
+    if (questionsUsed.length === 0) {
+        indexOfQuestion = randomNumber;
+        renderValueTextTest();
+    }     
+};
 
-    questionsUsed.push(indexOfQuestion);
-    console.log(questionsUsed);
-    const numberOfQuestion = document.getElementById('number__question');
-    numberOfQuestion.innerText = questionsUsed.length;
+questionsUsed.push(indexOfQuestion);
+console.log(questionsUsed);
+const numberOfQuestion = document.getElementById('number__question');
+numberOfQuestion.innerText = questionsUsed.length;
 };
 
 function renderValueTextTest() {
@@ -84,7 +84,11 @@ const randomPictQuestion = () => {
     let hitDuplicate2 = false;
 
     if (questionsUsed2.length > 4) {
-        navigateToUrl('/resultTest');
+        let topic = window.location.href.match('topic=(?<topic>.+)').groups.topic;
+
+        navigateToUrl(`/resultTest?topic=${topic}`);
+        
+        return;
     } else {
         if (questionsUsed2.length > 0) {
             questionsUsed2.forEach(item => {
@@ -128,7 +132,7 @@ function renderValuePictTest() {
 }
 
 const checkCorrectness = () => {
-
+    let result;
     const inputArray = document.querySelectorAll('input[type="radio"]');
     inputArray.forEach(input => {
         const numberOfQuestion = document.getElementById('number__question');
@@ -143,8 +147,8 @@ const checkCorrectness = () => {
         }
         input.checked = false;
     })
-
-    console.log(score);
+    result = score;
+    console.log(result);
 };
 
 const createButtonListeners = () => {
@@ -160,7 +164,7 @@ const createButtonListeners = () => {
                 checkCorrectness();
                 randomQuestion();
 
-                progressBarElement.style.width = `${progressBarElement.clientWidth + 20}px`;
+                progressBarElement.style.width = `${progressBarElement.clientWidth + 25}px`;
             }
         })
     });
@@ -168,7 +172,7 @@ const createButtonListeners = () => {
 
 export default function renderTest() {
     let topic = window.location.href.match('topic=(?<topic>.+)').groups.topic;
-    
+
     textQuiz = textTestList[topic];
     pictQuiz = pictureTestList[topic];
 
@@ -176,15 +180,14 @@ export default function renderTest() {
     rootDiv.innerHTML = TestTemplate;
 
     const questionsCount = document.querySelector('.questions__count');
-    const headerDiv = document.querySelector('.account');
     const footer = document.querySelector('.footer');
-
-    headerDiv.innerHTML = HeaderCurrentUserTemplate;
     questionsCount.innerHTML = QuestionsCountTemplate;
     footer.innerHTML = FooterTestForm;
 
+    renderHeaderCurrentUser();
     const themElement = document.querySelector('.thems__test');
     themElement.innerText = topic;
+
     createButtonListeners();
     renderTestText();
     randomQuestion();

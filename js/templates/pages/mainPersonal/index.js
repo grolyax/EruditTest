@@ -48,8 +48,8 @@ const personAreaTemplate = `
                   </tr>
             </table>
             <div class="button-tests">
-                <button class="button-test" type="submit">Пройти тест</button>
-                <button class="button-new-test" type="submit">Создать свой тест</button>
+                <a href="/listOfTests" class="button-test">Пройти тест</a>
+                <a href="" class="button-new-test">Создать свой тест</a>
             </div>
 `;
 
