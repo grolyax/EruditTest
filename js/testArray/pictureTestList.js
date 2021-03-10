@@ -148,212 +148,101 @@ export default {
         {
             question: 'Укажите автора романа антиутопии "1984"',
             values: [
-                '../../pictures/imagesLiterature/0//ххх.jpg',
-                '../../pictures/imagesLiterature/0//ххх.jpg',
-                '../../pictures/imagesLiterature/0//ххх.jpg',
-                '../../pictures/imagesLiterature/0//ххх.jpg',
-            ],
-            trueValue: 0
-        },
-        {
-            question: 'Хто аўтар твора "Руны Перуновы"?',
-            values: [
-                '../../pictures/imagesLiterature/1//ххх.jpg',
-                '../../pictures/imagesLiterature/1//ххх.jpg',
-                '../../pictures/imagesLiterature/1//ххх.jpg',
-                '../../pictures/imagesLiterature/1//ххх.jpg',
+                '../../pictures/imagesLiterature/0/oruwel.jpg',
+                '../../pictures/imagesLiterature/0/Huksly.jpg',
+                '../../pictures/imagesLiterature/0/Birdjes.jpg',
+                '../../pictures/imagesLiterature/0/Golding.jpg',
             ],
             trueValue: 0
         },
         {
             question: 'Какой из кадров не является экранизацией романа Шолохова "Тихий Дон"',
             values: [
-                '../../pictures/imagesLiterature/2//ххх.jpg',
-                '../../pictures/imagesLiterature/2//ххх.jpg',
-                '../../pictures/imagesLiterature/2//ххх.jpg',
-                '../../pictures/imagesLiterature/2//ххх.jpg',
+                '../../pictures/imagesLiterature/1/1.jpg',
+                '../../pictures/imagesLiterature/1/2.jpg',
+                '../../pictures/imagesLiterature/1/3.jpg',
+                '../../pictures/imagesLiterature/1/4.jpg',
             ],
-            trueValue: 0
+            trueValue: 3
         },
         {
             question: 'Укажите на фотографии главу колхоза и героя экранизации "Поднятая целина" Семена Давыдова',
             values: [
-                '../../pictures/imagesLiterature/3//ххх.jpg',
-                '../../pictures/imagesLiterature/3//ххх.jpg',
-                '../../pictures/imagesLiterature/3//ххх.jpg',
-                '../../pictures/imagesLiterature/3//ххх.jpg',
+                '../../pictures/imagesLiterature/2/1.jpg',
+                '../../pictures/imagesLiterature/2/2.jpg',
+                '../../pictures/imagesLiterature/2/3.jpg',
+                '../../pictures/imagesLiterature/2/4.jpg',
             ],
-            trueValue: 0
+            trueValue: 2
         },
         {
-            question: 'Укажите концовку фильма "Знак бяды", который был снят по мотивам книги знаменитого белорусского писателя Василя Быкова',
+            question: 'Выберите номер картинки, на котором изображен главный герой романа"Мастер и Маргарита".',
             values: [
-                '../../pictures/imagesLiterature/4//ххх.jpg',
-                '../../pictures/imagesLiterature/4//ххх.jpg',
-                '../../pictures/imagesLiterature/4//ххх.jpg',
-                '../../pictures/imagesLiterature/4//ххх.jpg',
+                '../../pictures/imagesLiterature/3/1.jpg',
+                '../../pictures/imagesLiterature/3/2.jpg',
+                '../../pictures/imagesLiterature/3/3.jpg',
+                '../../pictures/imagesLiterature/3/4.jpg',
             ],
-            trueValue: 0
+            trueValue: 2
         },
         {
-            question: 'Под каким номером находится персонаж, который в комедии Александра Грибоедова"Горе от ума" произнес фразу:"Служить бы рад-прслуживаться тошно".',
+            question: '"Гордая, обидчивая, капризная. У нее трудный характер, она любит себя и ждёт заботы и комплиментов.",-выберите картинку с персонажем, о котором говорится в тексте:',
             values: [
-                '../../pictures/imagesLiterature/5//ххх.jpg',
-                '../../pictures/imagesLiterature/5//ххх.jpg',
-                '../../pictures/imagesLiterature/5//ххх.jpg',
-                '../../pictures/imagesLiterature/5//ххх.jpg',
+                '../../pictures/imagesLiterature/4/1.jpg',
+                '../../pictures/imagesLiterature/4/2.jpg',
+                '../../pictures/imagesLiterature/4/3.jpg',
+                '../../pictures/imagesLiterature/4/4.jpg',
             ],
-            trueValue: 0
-        },
-        {
-            question: 'Выберите номер картинки, на котором изображен персонаж романа"Мастер и Маргарита", который является символом любви и самопожертвования:',
-            values: [
-                '../../pictures/imagesLiterature/6//ххх.jpg',
-                '../../pictures/imagesLiterature/6//ххх.jpg',
-                '../../pictures/imagesLiterature/6//ххх.jpg',
-                '../../pictures/imagesLiterature/6//ххх.jpg',
-            ],
-            trueValue: 0
-        },
-        {
-            question: '"Гордая, обидчивая, капризная. Её семя занесло на планету маленького принца случайно, она долго “прихорашивалась”, прежде чем раскрыться. У нее трудный характер, она любит себя и ждёт заботы и комплиментов. Просит помощи для защиты от ветра, боится насекомых и зверей",-выберите номер картинки, на котором изображен персонаж, о котором говорится в тексте:',
-            values: [
-                '../../pictures/imagesLiterature/7//ххх.jpg',
-                '../../pictures/imagesLiterature/7//ххх.jpg',
-                '../../pictures/imagesLiterature/7//ххх.jpg',
-                '../../pictures/imagesLiterature/7//ххх.jpg',
-            ],
-            trueValue: 0
-        },
-        {
-            question: '"В прифронтовой полосе группа девушек‑зенитчиц вынуждена вступить в неравный бой с вражескими десантниками. Эти девчонки мечтали о большой любви, нежности, семейном тепле — но на их долю выпала жестокая война, и они до конца выполнили свой",-номер изображения, который подходит под описания произведения:',
-            values: [
-                '../../pictures/imagesLiterature/8//ххх.jpg',
-                '../../pictures/imagesLiterature/8//ххх.jpg',
-                '../../pictures/imagesLiterature/8//ххх.jpg',
-                '../../pictures/imagesLiterature/8//ххх.jpg',
-            ],
-            trueValue: 0
-        },
-        {
-            question: 'Иллюстрация к произведению"Вишневый сад" находится под номером:',
-            values: [
-                '../../pictures/imagesLiterature/9//ххх.jpg',
-                '../../pictures/imagesLiterature/9//ххх.jpg',
-                '../../pictures/imagesLiterature/9//ххх.jpg',
-                '../../pictures/imagesLiterature/9//ххх.jpg',
-            ],
-            trueValue: 0
-        },
-        {
-            question: 'Найдите дом автора произведения «Картина из голодных лет»',
-            values: [
-                '../../pictures/imagesLiterature/10//ххх.jpg',
-                '../../pictures/imagesLiterature/10//ххх.jpg',
-                '../../pictures/imagesLiterature/10//ххх.jpg',
-                '../../pictures/imagesLiterature/10//ххх.jpg',
-            ],
-            trueValue: 0
-        },
-        {
-            question: 'Какая картинка больше всего подходит под сюжет произведения А.П. Чехов «Хамелеон»',
-            values: [
-                '../../pictures/imagesLiterature/11//ххх.jpg',
-                '../../pictures/imagesLiterature/11//ххх.jpg',
-                '../../pictures/imagesLiterature/11//ххх.jpg',
-                '../../pictures/imagesLiterature/11//ххх.jpg',
-            ],
-            trueValue: 0
+            trueValue: 3
         },
         {
             question: ' Какому автору принадлежит эта строка: « Мой дядя самых честных правил...»',
             values: [
-                '../../pictures/imagesLiterature/12//ххх.jpg',
-                '../../pictures/imagesLiterature/12//ххх.jpg',
-                '../../pictures/imagesLiterature/12//ххх.jpg',
-                '../../pictures/imagesLiterature/12//ххх.jpg',
+                '../../pictures/imagesLiterature/5/.jpg',
+                '../../pictures/imagesLiterature/5/.jpg',
+                '../../pictures/imagesLiterature/5/.jpg',
+                '../../pictures/imagesLiterature/5/.jpg',
             ],
             trueValue: 0
         },
         {
-            question: 'Какой кадр имеет отношение к Эдуарду Успенскому?',
+            question: 'Какой кадр НЕ имеет отношение к Эдуарду Успенскому?',
             values: [
-                '../../pictures/imagesLiterature/13//ххх.jpg',
-                '../../pictures/imagesLiterature/13//ххх.jpg',
-                '../../pictures/imagesLiterature/13//ххх.jpg',
-                '../../pictures/imagesLiterature/13//ххх.jpg',
-            ],
-            trueValue: 0
-        },
-        {
-            question: 'На какой фотографии изображена современная писательница Дельфин де Виган?',
-            values: [
-                '../../pictures/imagesLiterature/14//ххх.jpg',
-                '../../pictures/imagesLiterature/14//ххх.jpg',
-                '../../pictures/imagesLiterature/14//ххх.jpg',
-                '../../pictures/imagesLiterature/14//ххх.jpg',
-            ],
-            trueValue: 0
-        },
-        {
-            question: 'На каком портрете изображен друг поэта М. Ю. Лермонтова - Святослав Афанасьевич Раевский?',
-            values: [
-                '../../pictures/imagesLiterature/15//ххх.jpg',
-                '../../pictures/imagesLiterature/15//ххх.jpg',
-                '../../pictures/imagesLiterature/15//ххх.jpg',
-                '../../pictures/imagesLiterature/15//ххх.jpg',
-            ],
-            trueValue: 0
-        },
-        {
-            question: 'На каком портрете изображен Энтони Троллоп?',
-            values: [
-                '../../pictures/imagesLiterature/16//ххх.jpg',
-                '../../pictures/imagesLiterature/16//ххх.jpg',
-                '../../pictures/imagesLiterature/16//ххх.jpg',
-                '../../pictures/imagesLiterature/16//ххх.jpg',
+                '../../pictures/imagesLiterature/6/1.jpg',
+                '../../pictures/imagesLiterature/6/2.jpg',
+                '../../pictures/imagesLiterature/6/3.jpg',
+                '../../pictures/imagesLiterature/6/4.jpg',
             ],
             trueValue: 0
         },
         {
             question: 'Где происходит действие романа "Мастер и Маргарита"?',
             values: [
-                '../../pictures/imagesLiterature/17//ххх.jpg',
-                '../../pictures/imagesLiterature/17//ххх.jpg',
-                '../../pictures/imagesLiterature/17//ххх.jpg',
-                '../../pictures/imagesLiterature/17//ххх.jpg',
+                '../../pictures/imagesLiterature/7/.jpg',
+                '../../pictures/imagesLiterature/7/.jpg',
+                '../../pictures/imagesLiterature/7/.jpg',
+                '../../pictures/imagesLiterature/7/.jpg',
             ],
             trueValue: 0
         }, {
-            question: 'На какой из фотографии изображен кадр из фильма"Евгений Онегин. Герой нашего времени"?',
+            question: 'На какой из фотографии изображен кадр из фильма"Герой нашего времени"?',
             values: [
-                '../../pictures/imagesLiterature/18//ххх.jpg',
-                '../../pictures/imagesLiterature/18//ххх.jpg',
-                '../../pictures/imagesLiterature/18//ххх.jpg',
-                '../../pictures/imagesLiterature/18//ххх.jpg',
+                '../../pictures/imagesLiterature/8/1.jpg',
+                '../../pictures/imagesLiterature/8/2.jpg',
+                '../../pictures/imagesLiterature/8/3.jpg',
+                '../../pictures/imagesLiterature/8/4.jpg',
             ],
-            trueValue: 0
+            trueValue: 2
         }
     ],
-
     geography: [
-        {
-            question: 'На какой из картинок изображено животное,которое не является рептилией? ',
-            values: [
-                '../../pictures/imagesGeography/0/ххх.jpg',
-                '../../pictures/imagesGeography/0/ххх.jpg',
-                '../../pictures/imagesGeography/0/ххх.jpg',
-                '../../pictures/imagesGeography/0//ххх.jpg',
-            ],
-            trueValue: 0
-        },
         {
             question: 'На какой из картинок изображен флаг страны, которая не является членом ООН?',
             values: [
                 '../../pictures/imagesGeography/0/ххх.jpg',
                 '../../pictures/imagesGeography/0/ххх.jpg',
                 '../../pictures/imagesGeography/0/ххх.jpg',
-                '../../pictures/imagesGeography/0//ххх.jpg',
+                '../../pictures/imagesGeography/0/.jpg',
             ],
             trueValue: 0
         },
@@ -363,7 +252,7 @@ export default {
                 '../../pictures/imagesGeography/0/ххх.jpg',
                 '../../pictures/imagesGeography/0/ххх.jpg',
                 '../../pictures/imagesGeography/0/ххх.jpg',
-                '../../pictures/imagesGeography/0//ххх.jpg',
+                '../../pictures/imagesGeography/0/.jpg',
             ],
             trueValue: 0
         },
@@ -373,7 +262,7 @@ export default {
                 '../../pictures/imagesGeography/0/ххх.jpg',
                 '../../pictures/imagesGeography/0/ххх.jpg',
                 '../../pictures/imagesGeography/0/ххх.jpg',
-                '../../pictures/imagesGeography/0//ххх.jpg',
+                '../../pictures/imagesGeography/0/.jpg',
             ],
             trueValue: 0
         },
@@ -383,7 +272,7 @@ export default {
                 '../../pictures/imagesGeography/0/ххх.jpg',
                 '../../pictures/imagesGeography/0/ххх.jpg',
                 '../../pictures/imagesGeography/0/ххх.jpg',
-                '../../pictures/imagesGeography/0//ххх.jpg',
+                '../../pictures/imagesGeography/0/.jpg',
             ],
             trueValue: 0
         },
@@ -393,7 +282,7 @@ export default {
                 '../../pictures/imagesGeography/0/ххх.jpg',
                 '../../pictures/imagesGeography/0/ххх.jpg',
                 '../../pictures/imagesGeography/0/ххх.jpg',
-                '../../pictures/imagesGeography/0//ххх.jpg',
+                '../../pictures/imagesGeography/0/.jpg',
             ],
             trueValue: 0
         },
@@ -403,7 +292,7 @@ export default {
                 '../../pictures/imagesGeography/0/ххх.jpg',
                 '../../pictures/imagesGeography/0/ххх.jpg',
                 '../../pictures/imagesGeography/0/ххх.jpg',
-                '../../pictures/imagesGeography/0//ххх.jpg',
+                '../../pictures/imagesGeography/0/.jpg',
             ],
             trueValue: 0
         },
@@ -413,7 +302,7 @@ export default {
                 '../../pictures/imagesGeography/0/ххх.jpg',
                 '../../pictures/imagesGeography/0/ххх.jpg',
                 '../../pictures/imagesGeography/0/ххх.jpg',
-                '../../pictures/imagesGeography/0//ххх.jpg',
+                '../../pictures/imagesGeography/0/.jpg',
             ],
             trueValue: 0
         },
@@ -423,7 +312,7 @@ export default {
                 '../../pictures/imagesGeography/0/ххх.jpg',
                 '../../pictures/imagesGeography/0/ххх.jpg',
                 '../../pictures/imagesGeography/0/ххх.jpg',
-                '../../pictures/imagesGeography/0//ххх.jpg',
+                '../../pictures/imagesGeography/0/.jpg',
             ],
             trueValue: 0
         },
@@ -433,7 +322,7 @@ export default {
                 '../../pictures/imagesGeography/0/ххх.jpg',
                 '../../pictures/imagesGeography/0/ххх.jpg',
                 '../../pictures/imagesGeography/0/ххх.jpg',
-                '../../pictures/imagesGeography/0//ххх.jpg',
+                '../../pictures/imagesGeography/0/.jpg',
             ],
             trueValue: 0
         },
@@ -443,7 +332,7 @@ export default {
                 '../../pictures/imagesGeography/0/ххх.jpg',
                 '../../pictures/imagesGeography/0/ххх.jpg',
                 '../../pictures/imagesGeography/0/ххх.jpg',
-                '../../pictures/imagesGeography/0//ххх.jpg',
+                '../../pictures/imagesGeography/0/.jpg',
             ],
             trueValue: 0
         },
@@ -453,7 +342,7 @@ export default {
                 '../../pictures/imagesGeography/0/ххх.jpg',
                 '../../pictures/imagesGeography/0/ххх.jpg',
                 '../../pictures/imagesGeography/0/ххх.jpg',
-                '../../pictures/imagesGeography/0//ххх.jpg',
+                '../../pictures/imagesGeography/0/.jpg',
             ],
             trueValue: 0
         },
@@ -463,7 +352,7 @@ export default {
                 '../../pictures/imagesGeography/0/ххх.jpg',
                 '../../pictures/imagesGeography/0/ххх.jpg',
                 '../../pictures/imagesGeography/0/ххх.jpg',
-                '../../pictures/imagesGeography/0//ххх.jpg',
+                '../../pictures/imagesGeography/0/.jpg',
             ],
             trueValue: 0
         },
@@ -473,7 +362,7 @@ export default {
                 '../../pictures/imagesGeography/0/ххх.jpg',
                 '../../pictures/imagesGeography/0/ххх.jpg',
                 '../../pictures/imagesGeography/0/ххх.jpg',
-                '../../pictures/imagesGeography/0//ххх.jpg',
+                '../../pictures/imagesGeography/0/.jpg',
             ],
             trueValue: 0
         },
@@ -483,7 +372,7 @@ export default {
                 '../../pictures/imagesGeography/0/ххх.jpg',
                 '../../pictures/imagesGeography/0/ххх.jpg',
                 '../../pictures/imagesGeography/0/ххх.jpg',
-                '../../pictures/imagesGeography/0//ххх.jpg',
+                '../../pictures/imagesGeography/0/.jpg',
             ],
             trueValue: 0
         },
@@ -493,7 +382,7 @@ export default {
                 '../../pictures/imagesGeography/0/ххх.jpg',
                 '../../pictures/imagesGeography/0/ххх.jpg',
                 '../../pictures/imagesGeography/0/ххх.jpg',
-                '../../pictures/imagesGeography/0//ххх.jpg',
+                '../../pictures/imagesGeography/0/.jpg',
             ],
             trueValue: 0
         },
@@ -503,7 +392,7 @@ export default {
                 '../../pictures/imagesGeography/0/ххх.jpg',
                 '../../pictures/imagesGeography/0/ххх.jpg',
                 '../../pictures/imagesGeography/0/ххх.jpg',
-                '../../pictures/imagesGeography/0//ххх.jpg',
+                '../../pictures/imagesGeography/0/.jpg',
             ],
             trueValue: 0
         },
@@ -513,7 +402,7 @@ export default {
                 '../../pictures/imagesGeography/0/ххх.jpg',
                 '../../pictures/imagesGeography/0/ххх.jpg',
                 '../../pictures/imagesGeography/0/ххх.jpg',
-                '../../pictures/imagesGeography/0//ххх.jpg',
+                '../../pictures/imagesGeography/0/.jpg',
             ],
             trueValue: 0
         },
@@ -523,7 +412,7 @@ export default {
                 '../../pictures/imagesGeography/0/ххх.jpg',
                 '../../pictures/imagesGeography/0/ххх.jpg',
                 '../../pictures/imagesGeography/0/ххх.jpg',
-                '../../pictures/imagesGeography/0//ххх.jpg',
+                '../../pictures/imagesGeography/0/.jpg',
             ],
             trueValue: 0
         },
@@ -533,19 +422,19 @@ export default {
                 '../../pictures/imagesGeography/0/ххх.jpg',
                 '../../pictures/imagesGeography/0/ххх.jpg',
                 '../../pictures/imagesGeography/0/ххх.jpg',
-                '../../pictures/imagesGeography/0//ххх.jpg',
+                '../../pictures/imagesGeography/0/.jpg',
             ],
             trueValue: 0
         }
     ],
     architecture: [
         {
-            question: 'Какая из нижеприведенных работ не является работой Нормана Фостера?',
+            question: 'Усыпальница жены падишаха Шах-Джахана Тадж-Махал?',
             values: [
-                '../../pictures/imagesArchitecture/0/ххх.jpg',
-                '../../pictures/imagesArchitecture/0/ххх.jpg',
-                '../../pictures/imagesArchitecture/0/ххх.jpg',
-                '../../pictures/imagesArchitecture/0//ххх.jpg',
+                '../../pictures/imagesArchitecture/0/mavzoley.jpg',
+                '../../pictures/imagesArchitecture/0/Tadzh-Mahal.jpg',
+                '../../pictures/imagesArchitecture/0/pyramida.jpg',
+                '../../pictures/imagesArchitecture/0/lenin.jpg',
             ],
             trueValue: 3
         },
@@ -555,7 +444,7 @@ export default {
                 '../../pictures/imagesArchitecture/1/ххх.jpg',
                 '../../pictures/imagesArchitecture/1/ххх.jpg',
                 '../../pictures/imagesArchitecture/1/ххх.jpg',
-                '../../pictures/imagesArchitecture/1//ххх.jpg',
+                '../../pictures/imagesArchitecture/1/ххх.jpg',
             ],
             trueValue: 1
         },
@@ -565,7 +454,7 @@ export default {
                 '../../pictures/imagesArchitecture/2/ххх.jpg',
                 '../../pictures/imagesArchitecture/2/ххх.jpg',
                 '../../pictures/imagesArchitecture/2/ххх.jpg',
-                '../../pictures/imagesArchitecture/2//ххх.jpg',
+                '../../pictures/imagesArchitecture/2/.jpg',
             ],
             trueValue: 0
         },
@@ -575,7 +464,7 @@ export default {
                 '../../pictures/imagesArchitecture/3/ххх.jpg',
                 '../../pictures/imagesArchitecture/3/ххх.jpg',
                 '../../pictures/imagesArchitecture/3/ххх.jpg',
-                '../../pictures/imagesArchitecture/3//ххх.jpg',
+                '../../pictures/imagesArchitecture/3/.jpg',
             ],
             trueValue: 2
         },
@@ -585,7 +474,7 @@ export default {
                 '../../pictures/imagesArchitecture/4/ххх.jpg',
                 '../../pictures/imagesArchitecture/4/ххх.jpg',
                 '../../pictures/imagesArchitecture/4/ххх.jpg',
-                '../../pictures/imagesArchitecture/4//ххх.jpg',
+                '../../pictures/imagesArchitecture/4/.jpg',
             ],
             trueValue: 0
         },
@@ -595,7 +484,7 @@ export default {
                 '../../pictures/imagesArchitecture/5/ххх.jpg',
                 '../../pictures/imagesArchitecture/5/ххх.jpg',
                 '../../pictures/imagesArchitecture/5/ххх.jpg',
-                '../../pictures/imagesArchitecture/5//ххх.jpg',
+                '../../pictures/imagesArchitecture/5/.jpg',
             ],
             trueValue: 0
         },
@@ -605,7 +494,7 @@ export default {
                 '../../pictures/imagesArchitecture/6/ххх.jpg',
                 '../../pictures/imagesArchitecture/6/ххх.jpg',
                 '../../pictures/imagesArchitecture/6/ххх.jpg',
-                '../../pictures/imagesArchitecture/6//ххх.jpg',
+                '../../pictures/imagesArchitecture/6/.jpg',
             ],
             trueValue: 0
         },
@@ -615,7 +504,7 @@ export default {
                 '../../pictures/imagesArchitecture/8/ххх.jpg',
                 '../../pictures/imagesArchitecture/8/ххх.jpg',
                 '../../pictures/imagesArchitecture/8/ххх.jpg',
-                '../../pictures/imagesArchitecture/8//ххх.jpg',
+                '../../pictures/imagesArchitecture/8/.jpg',
             ],
             trueValue: 0
         },
@@ -625,7 +514,7 @@ export default {
                 '../../pictures/imagesArchitecture/9/ххх.jpg',
                 '../../pictures/imagesArchitecture/9/ххх.jpg',
                 '../../pictures/imagesArchitecture/9/ххх.jpg',
-                '../../pictures/imagesArchitecture/9//ххх.jpg',
+                '../../pictures/imagesArchitecture/9/.jpg',
             ],
             trueValue: 0
         },
@@ -635,7 +524,7 @@ export default {
                 '../../pictures/imagesArchitecture/10/ххх.jpg',
                 '../../pictures/imagesArchitecture/10/ххх.jpg',
                 '../../pictures/imagesArchitecture/10/ххх.jpg',
-                '../../pictures/imagesArchitecture/10//ххх.jpg',
+                '../../pictures/imagesArchitecture/10/.jpg',
             ],
             trueValue: 0
         },
@@ -645,7 +534,7 @@ export default {
                 '../../pictures/imagesArchitecture/11/ххх.jpg',
                 '../../pictures/imagesArchitecture/11/ххх.jpg',
                 '../../pictures/imagesArchitecture/11/ххх.jpg',
-                '../../pictures/imagesArchitecture/11//ххх.jpg',
+                '../../pictures/imagesArchitecture/11/.jpg',
             ],
             trueValue: 0
         },
@@ -730,7 +619,7 @@ export default {
             trueValue: 0
         },
         {
-            question: 'Какое из 7 чудес свет сохранилось до наших дней?',
+            question: 'Какое из 7 чудес света сохранилось до наших дней?',
             values: [
                 '../../pictures/imagesArchitecture/20/ххх.jpg',
                 '../../pictures/imagesArchitecture/20/ххх.jpg',
@@ -748,7 +637,17 @@ export default {
                 '../../pictures/imagesArchitecture/21/ххх.jpg',
             ],
             trueValue: 0
-        }
+        },
+        {
+            question: 'Какая из нижеприведенных работ не является работой Нормана Фостера?',
+            values: [
+                '../../pictures/imagesArchitecture/22/ххх.jpg',
+                '../../pictures/imagesArchitecture/22/ххх.jpg',
+                '../../pictures/imagesArchitecture/22/ххх.jpg',
+                '../../pictures/imagesArchitecture/22/.jpg',
+            ],
+            trueValue: 3
+        },
     ],
     nature: [
         {
@@ -890,6 +789,16 @@ export default {
                 '../../pictures/imagesNature/10/Iguasu.jpg',
             ],
             trueValue: 3
+        },
+        {
+            question: 'На какой из картинок изображено животное,которое не является рептилией? ',
+            values: [
+                '../../pictures/imagesNature/11/1.jpg',
+                '../../pictures/imagesNature/11/2.jpg',
+                '../../pictures/imagesNature/11/3.jpg',
+                '../../pictures/imagesNature/11/4.jpg',
+            ],
+            trueValue:2
         }
     ]
 }
