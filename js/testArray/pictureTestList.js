@@ -142,6 +142,16 @@ export default {
                 '../../pictures/imagesPolitic/6/balkan1.jpg',
             ],
             trueValue: 3
+        },
+        {
+            question: 'На какой из картинок изображен флаг страны, которая не является членом ООН?',
+            values: [
+                '../../pictures/imagesPolitic/7/1.jpg',
+                '../../pictures/imagesPolitic/7/2.jpg',
+                '../../pictures/imagesPolitic/7/3.jpg',
+                '../../pictures/imagesPolitic/7/4.jpg',
+            ],
+            trueValue: 0
         }
     ],
     literature: [
@@ -237,192 +247,92 @@ export default {
     ],
     geography: [
         {
-            question: 'На какой из картинок изображен флаг страны, которая не является членом ООН?',
-            values: [
-                '../../pictures/imagesGeography/0/ххх.jpg',
-                '../../pictures/imagesGeography/0/ххх.jpg',
-                '../../pictures/imagesGeography/0/ххх.jpg',
-                '../../pictures/imagesGeography/0/.jpg',
-            ],
-            trueValue: 0
-        },
-        {
             question: 'На какой из картинок изображён Арктический пояс?',
             values: [
-                '../../pictures/imagesGeography/0/ххх.jpg',
-                '../../pictures/imagesGeography/0/ххх.jpg',
-                '../../pictures/imagesGeography/0/ххх.jpg',
-                '../../pictures/imagesGeography/0/.jpg',
+                '../../pictures/imagesGeography/0/1.jpg',
+                '../../pictures/imagesGeography/0/2.jpg',
+                '../../pictures/imagesGeography/0/3.jpg',
+                '../../pictures/imagesGeography/0/4.jpg',
             ],
-            trueValue: 0
-        },
-        {
-            question: 'Столица Мадагаскара изображена на картинке',
-            values: [
-                '../../pictures/imagesGeography/0/ххх.jpg',
-                '../../pictures/imagesGeography/0/ххх.jpg',
-                '../../pictures/imagesGeography/0/ххх.jpg',
-                '../../pictures/imagesGeography/0/.jpg',
-            ],
-            trueValue: 0
-        },
-        {
-            question: 'На какой картинке изображено самое быстрое животное на Земле?',
-            values: [
-                '../../pictures/imagesGeography/0/ххх.jpg',
-                '../../pictures/imagesGeography/0/ххх.jpg',
-                '../../pictures/imagesGeography/0/ххх.jpg',
-                '../../pictures/imagesGeography/0/.jpg',
-            ],
-            trueValue: 0
-        },
-        {
-            question: 'Какой флаг принадлежит Нидерландам?',
-            values: [
-                '../../pictures/imagesGeography/0/ххх.jpg',
-                '../../pictures/imagesGeography/0/ххх.jpg',
-                '../../pictures/imagesGeography/0/ххх.jpg',
-                '../../pictures/imagesGeography/0/.jpg',
-            ],
-            trueValue: 0
-        },
-        {
-            question: 'Какой флаг принадлежит Польше?',
-            values: [
-                '../../pictures/imagesGeography/0/ххх.jpg',
-                '../../pictures/imagesGeography/0/ххх.jpg',
-                '../../pictures/imagesGeography/0/ххх.jpg',
-                '../../pictures/imagesGeography/0/.jpg',
-            ],
-            trueValue: 0
+            trueValue: 1
         },
         {
             question: 'Выберите карту, на которой выделена территория Непала:',
             values: [
-                '../../pictures/imagesGeography/0/ххх.jpg',
-                '../../pictures/imagesGeography/0/ххх.jpg',
-                '../../pictures/imagesGeography/0/ххх.jpg',
-                '../../pictures/imagesGeography/0/.jpg',
+                '../../pictures/imagesGeography/1/1.png',
+                '../../pictures/imagesGeography/1/2.png',
+                '../../pictures/imagesGeography/1/3.jpg',
+                '../../pictures/imagesGeography/1/4.jpg',
             ],
             trueValue: 0
         },
         {
             question: 'На какой картинке изображена гора Фудзияма?',
             values: [
-                '../../pictures/imagesGeography/0/ххх.jpg',
-                '../../pictures/imagesGeography/0/ххх.jpg',
-                '../../pictures/imagesGeography/0/ххх.jpg',
-                '../../pictures/imagesGeography/0/.jpg',
+                '../../pictures/imagesGeography/2/1.jpg',
+                '../../pictures/imagesGeography/2/2.jpg',
+                '../../pictures/imagesGeography/2/3.jpg',
+                '../../pictures/imagesGeography/2/4.jpg',
             ],
             trueValue: 0
         },
         {
             question: 'Река Хуанхэ изображена на картинке:',
             values: [
-                '../../pictures/imagesGeography/0/ххх.jpg',
-                '../../pictures/imagesGeography/0/ххх.jpg',
-                '../../pictures/imagesGeography/0/ххх.jpg',
-                '../../pictures/imagesGeography/0/.jpg',
+                '../../pictures/imagesGeography/3/1.jpg',
+                '../../pictures/imagesGeography/3/2.jpg',
+                '../../pictures/imagesGeography/3/3.jpg',
+                '../../pictures/imagesGeography/3/4.jpg',
             ],
-            trueValue: 0
-        },
-        {
-            question: 'Выберите флаг Китая:',
-            values: [
-                '../../pictures/imagesGeography/0/ххх.jpg',
-                '../../pictures/imagesGeography/0/ххх.jpg',
-                '../../pictures/imagesGeography/0/ххх.jpg',
-                '../../pictures/imagesGeography/0/.jpg',
-            ],
-            trueValue: 0
-        },
-        {
-            question: 'На какой фотографии изображён МГУ(Московский Государственный Университет):',
-            values: [
-                '../../pictures/imagesGeography/0/ххх.jpg',
-                '../../pictures/imagesGeography/0/ххх.jpg',
-                '../../pictures/imagesGeography/0/ххх.jpg',
-                '../../pictures/imagesGeography/0/.jpg',
-            ],
-            trueValue: 0
+            trueValue: 1
         },
         {
             question: 'Выберите карту, на которой выделена территория Республики Коми:',
             values: [
-                '../../pictures/imagesGeography/0/ххх.jpg',
-                '../../pictures/imagesGeography/0/ххх.jpg',
-                '../../pictures/imagesGeography/0/ххх.jpg',
-                '../../pictures/imagesGeography/0/.jpg',
+                '../../pictures/imagesGeography/4/1.jpg',
+                '../../pictures/imagesGeography/4/2.jpg',
+                '../../pictures/imagesGeography/4/3.jpg',
+                '../../pictures/imagesGeography/4/4.jpg',
             ],
-            trueValue: 0
-        },
-        {
-            question: 'Выберите герб Германии:',
-            values: [
-                '../../pictures/imagesGeography/0/ххх.jpg',
-                '../../pictures/imagesGeography/0/ххх.jpg',
-                '../../pictures/imagesGeography/0/ххх.jpg',
-                '../../pictures/imagesGeography/0/.jpg',
-            ],
-            trueValue: 0
-        },
-        {
-            question: 'Выберите Парижскую Триумфальную Арку:',
-            values: [
-                '../../pictures/imagesGeography/0/ххх.jpg',
-                '../../pictures/imagesGeography/0/ххх.jpg',
-                '../../pictures/imagesGeography/0/ххх.jpg',
-                '../../pictures/imagesGeography/0/.jpg',
-            ],
-            trueValue: 0
-        },
-        {
-            question: 'Самая длинная река Беларуси изображена на картинке:',
-            values: [
-                '../../pictures/imagesGeography/0/ххх.jpg',
-                '../../pictures/imagesGeography/0/ххх.jpg',
-                '../../pictures/imagesGeography/0/ххх.jpg',
-                '../../pictures/imagesGeography/0/.jpg',
-            ],
-            trueValue: 0
+            trueValue: 2
         },
         {
             question: 'Выберите флаг страны, которой принадлежит остров Бали:',
             values: [
-                '../../pictures/imagesGeography/0/ххх.jpg',
-                '../../pictures/imagesGeography/0/ххх.jpg',
-                '../../pictures/imagesGeography/0/ххх.jpg',
-                '../../pictures/imagesGeography/0/.jpg',
+                '../../pictures/imagesGeography/5/1.png',
+                '../../pictures/imagesGeography/5/2.jpg',
+                '../../pictures/imagesGeography/5/3.png',
+                '../../pictures/imagesGeography/5/4.png',
             ],
-            trueValue: 0
+            trueValue: 1
         },
         {
             question: 'Выберите флаг страны, в которой находится город Зальцбург?',
             values: [
-                '../../pictures/imagesGeography/0/ххх.jpg',
-                '../../pictures/imagesGeography/0/ххх.jpg',
-                '../../pictures/imagesGeography/0/ххх.jpg',
-                '../../pictures/imagesGeography/0/.jpg',
+                '../../pictures/imagesGeography/6/1.png',
+                '../../pictures/imagesGeography/6/2.jpg',
+                '../../pictures/imagesGeography/6/3.png',
+                '../../pictures/imagesGeography/6/4.jpg',
             ],
-            trueValue: 0
+            trueValue: 3
         },
         {
             question: 'Укажите флаг страны,национальным героем которой является Тадеуш Костюшко?',
             values: [
-                '../../pictures/imagesGeography/0/ххх.jpg',
-                '../../pictures/imagesGeography/0/ххх.jpg',
-                '../../pictures/imagesGeography/0/ххх.jpg',
-                '../../pictures/imagesGeography/0/.jpg',
+                '../../pictures/imagesGeography/7/1.png',
+                '../../pictures/imagesGeography/7/2.jpg',
+                '../../pictures/imagesGeography/7/3.png',
+                '../../pictures/imagesGeography/7/4.png',
             ],
             trueValue: 0
         },
         {
             question: 'Выберите флаг страны, которая является лидером в сфере автомобилестроения?',
             values: [
-                '../../pictures/imagesGeography/0/ххх.jpg',
-                '../../pictures/imagesGeography/0/ххх.jpg',
-                '../../pictures/imagesGeography/0/ххх.jpg',
-                '../../pictures/imagesGeography/0/.jpg',
+                '../../pictures/imagesGeography/8/1.jpg',
+                '../../pictures/imagesGeography/8/2.png',
+                '../../pictures/imagesGeography/8/3.jpg',
+                '../../pictures/imagesGeography/8/4.png',
             ],
             trueValue: 0
         }
@@ -435,6 +345,16 @@ export default {
                 '../../pictures/imagesArchitecture/0/Tadzh-Mahal.jpg',
                 '../../pictures/imagesArchitecture/0/pyramida.jpg',
                 '../../pictures/imagesArchitecture/0/lenin.jpg',
+            ],
+            trueValue: 1
+        },
+        {
+            question: 'Выберите Парижскую Триумфальную Арку:',
+            values: [
+                '../../pictures/imagesArchitecture/1/1.jpg',
+                '../../pictures/imagesArchitecture/1/2.jpg',
+                '../../pictures/imagesArchitecture/1/3.jpg',
+                '../../pictures/imagesArchitecture/1/4.jpg',
             ],
             trueValue: 3
         },
@@ -798,7 +718,17 @@ export default {
                 '../../pictures/imagesNature/11/3.jpg',
                 '../../pictures/imagesNature/11/4.jpg',
             ],
-            trueValue:2
+            trueValue: 2
+        },
+        {
+            question: 'На какой картинке изображено самое быстрое животное на Земле?',
+            values: [
+                '../../pictures/imagesGeography/12/1.jpg',
+                '../../pictures/imagesGeography/12/2.jpg',
+                '../../pictures/imagesGeography/12/3.jpg',
+                '../../pictures/imagesGeography/12/4.jpg',
+            ],
+            trueValue: 1
         }
     ]
 }
