@@ -60,6 +60,7 @@ export default function registerUser(event) {
     const password = formData.get('password');
     const repeatPassword = formData.get('repeatPassword');
 
+
     const errors = validateRegistration({ email, password, repeatPassword });
     
     showErrors(errors);
@@ -78,6 +79,7 @@ export default function registerUser(event) {
         password: hashedPassword.toString(),
         score: {history: 0, literature: 0, geography: 0, architecture: 0, nature: 0, society: 0, technique: 0, politics: 0,}, 
     };
+    
 
     try {
         userList.add(newUser);
