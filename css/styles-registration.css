@@ -7,6 +7,8 @@
 .registration-form form {
   display: flex;
   flex-direction: column; }
+  .registration-form form .error {
+    color: #e40404; }
   .registration-form form label {
     margin-top: 10px;
     margin-bottom: 5px;

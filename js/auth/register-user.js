@@ -76,6 +76,7 @@ export default function registerUser(event) {
         id: generateId(userList.users),
         email,
         password: hashedPassword.toString(),
+        score: {history: 0, literature: 0, geography: 0, architecture: 0, nature: 0, society: 0, technique: 0, politics: 0,}, 
     };
 
     try {

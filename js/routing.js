@@ -77,19 +77,25 @@ export function renderPage() {
     return;
   }
 
-  if (currentUrl === LIST_OFTEST_URL) { //временно, потом добавить условие, что только для вошедших в аккаунт
+  if (currentUrl === LIST_OFTEST_URL) { 
     renderTestsList();
 
     return
   }
 
-  if (currentUrl === TEST_URL) { //временно, потом расставить по темам и на страницу рендера списка
+  if (currentUrl === TEST_URL) { 
     renderTest();
 
     return
   }
 
-  if (currentUrl === RESULT_TEST_URL) { //временно, потом расставить по темам и на страницу рендера списка
+  if (currentUrl === PERSONAL__URL) { 
+    renderMainPersonal();
+
+    return
+  }
+
+  if (currentUrl === RESULT_TEST_URL) { 
     renderResultTest();
 
     const RepeatTest = document.getElementById('repeat')

@@ -10,52 +10,10 @@ header {
   padding-left: 24px;
   padding-right: 24px;
   box-shadow: 5px 8px 10px #012913; }
-  header .dropdown {
-    position: relative;
-    display: inline-block;
-    width: 150px;
-    height: 30px;
-    background-color: #698c58;
-    border: 0.5px solid #3b5e29;
-    border-radius: 5px;
-    box-shadow: 2px 2px 2px #243e16; }
-    header .dropdown .account__login, header .dropdown .fa-sort-down {
-      padding-left: 10pt; }
-    header .dropdown p {
-      margin: 5px 0;
-      text-align: center;
-      color: #e9f29b; }
-    header .dropdown .account__arrow {
-      margin: 0; }
-    header .dropdown .dropdown__list {
-      position: absolute;
-      display: none;
-      width: 100%;
-      list-style-type: none;
-      padding: 0;
-      margin: 3px 0;
-      background-color: #ffffff;
-      box-sizing: border-box;
-      border-radius: 0 0 10px 10px; }
-  header .dropdown:hover .dropdown__list {
-    display: block;
-    width: 150px; }
-  header .dropdown:hover .dropdown__list li {
-    width: 150px;
-    text-align: center;
-    padding: 10px 0; }
-    header .dropdown:hover .dropdown__list li a {
-      text-decoration: none;
-      color: #18271b; }
-
-.dropdown:hover .dropdown__list {
-  display: block;
-  width: 130px; }
-
-.dropdown:hover .dropdown__list li {
-  width: 130px; }
 
 .account {
-  width: 200px; }
+  width: 250px;
+  display: flex;
+  justify-content: space-between; }
 
 /*# sourceMappingURL=styles-header.css.map */

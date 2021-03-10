@@ -1,21 +1,22 @@
 .account__buttons {
   display: flex;
-  width: 195px;
+  width: 230px;
   margin: 0;
   justify-content: space-between; }
-
-.button__registration, .button__login {
-  text-decoration: none;
-  text-align: center;
-  padding: 5px 15px 0 15px;
-  background: #698c58;
-  font-family: Play-Regular;
-  border-radius: 3px;
-  border: #355723;
-  height: 25px;
-  box-shadow: 2px 2px 3px #062515;
-  color: #fef8a0;
-  font-size: 15px; }
+  .account__buttons .email-user, .account__buttons .exit {
+    font-size: 14px;
+    padding-top: 7px; }
+  .account__buttons .button__registration, .account__buttons .button__login, .account__buttons .email-user, .account__buttons .exit {
+    text-decoration: none;
+    text-align: center;
+    padding: 5px 15px 0 15px;
+    background: #698c58;
+    font-family: Play-Regular;
+    border-radius: 3px;
+    border: #355723;
+    height: 25px;
+    box-shadow: 2px 2px 3px #062515;
+    color: #fef8a0; }
 
 .button__registration:hover, .button__login:hover {
   transform: translateY(-1px);

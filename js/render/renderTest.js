@@ -7,6 +7,10 @@ import FooterTestForm from '../templates/pages/footer-test/index.js';
 import { navigateToUrl } from '../routing.js';
 import pictureTestList from '../testArray/pictureTestList.js';
 import textTestList from '../testArray/textTestList.js';
+import currentUser from '../current-user.js';
+import userList from '../users.js';
+import storageService from '../storage-service.js';
+import { translateTopic } from '../render/render-main-personal.js';
 
 let textQuiz = [];
 let pictQuiz = [];
@@ -85,8 +89,13 @@ const randomPictQuestion = () => {
 
     if (questionsUsed2.length > 4) {
         let topic = window.location.href.match('topic=(?<topic>.+)').groups.topic;
-
-        navigateToUrl(`/resultTest?topic=${topic}`);
+    
+    userList.updateUserScoreById(currentUser.userData.id, topic, score);
+    storageService.set('users', JSON.stringify(userList.users));
+    currentUser.userData = userList.getUserByEmail(currentUser.userData.email); // должен идти перед currentScore, так как он временное поле
+    currentUser.userData.currentScore = score;
+    storageService.set('currentUser', JSON.stringify(currentUser.userData));
+    navigateToUrl(`/resultTest?topic=${topic}`);
         
         return;
     } else {
@@ -132,7 +141,6 @@ function renderValuePictTest() {
 }
 
 const checkCorrectness = () => {
-    let result;
     const inputArray = document.querySelectorAll('input[type="radio"]');
     inputArray.forEach(input => {
         const numberOfQuestion = document.getElementById('number__question');
@@ -147,8 +155,7 @@ const checkCorrectness = () => {
         }
         input.checked = false;
     })
-    result = score;
-    console.log(result);
+    console.log(score);
 };
 
 const createButtonListeners = () => {
@@ -186,7 +193,7 @@ export default function renderTest() {
 
     renderHeaderCurrentUser();
     const themElement = document.querySelector('.thems__test');
-    themElement.innerText = topic;
+    themElement.innerText = translateTopic(topic);
 
     createButtonListeners();
     renderTestText();

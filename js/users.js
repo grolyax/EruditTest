@@ -18,6 +18,18 @@ class UserList {
     getUserByEmail(email) {
         return this.users.find(user => user.email === email);
     }
+
+    updateUserScoreById(id, topic, testResult) {
+        this.users = this.users.map(user => {   // map а не forEach потому что операция-мутация, а не перебор
+            if (user.id === id) {
+                if (user.score[topic] < testResult) {
+                    user.score[topic] = testResult;
+                }
+            }
+
+            return user;
+        });
+    }
 }
 
 const users = JSON.parse(storageService.get('users'));

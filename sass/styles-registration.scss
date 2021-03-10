@@ -13,6 +13,9 @@
     form {
         display: flex;
         flex-direction: column;
+        .error {
+            color: rgb(228, 4, 4);
+        }
 
         label {
             margin-top: 10px;

@@ -14,64 +14,7 @@ const resultTestTemplate = `
             <th class="table__order">№</th>
             <th class="table__name">Имя</th>
             <th class="table__offset">Ответы правильные</th>
-            <th class="table__failure">Ответы неправильные</th>
-            <th class="th table__date">Дата</th>
-        </tr>
-        <tr>
-            <th class="table__order">1</th>
-            <th class="table__name"></th>
-            <th class="table__offset"></th>
-            <th class="table__failure"></th>
-            <th class="table__date"></th>
-        </tr>
-        <tr>
-            <th class="table__order">2</th>
-            <th class="table__name"></th>
-            <th class="table__offset"></th>
-            <th class="table__failure"></th>
-            <th class="table__date"></th>
-        </tr>
-        <tr>
-            <th class="table__order">3</th>
-            <th class="table__name"></th>
-            <th class="table__offset"></th>
-            <th class="table__failure"></th>
-            <th class="table__date"></th>
-        </tr>
-        <tr>
-            <th class="table__order">4</th>
-            <th class="table__name"></th>
-            <th class="table__offset"></th>
-            <th class="table__failure"></th>
-            <th class="table__date"></th>
-        </tr>
-        <tr>
-            <th class="table__order">5</th>
-            <th class="table__name"></th>
-            <th class="table__offset"></th>
-            <th class="table__failure"></th>
-            <th class="table__date"></th>
-        </tr>
-        <tr>
-            <th class="table__order">6</th>
-            <th class="table__name"></th>
-            <th class="table__offset"></th>
-            <th class="table__failure"></th>
-            <th class="table__date"></th>
-        </tr>
-        <tr>
-            <th class="table__order">7</th>
-            <th class="table__name"></th>
-            <th class="table__offset"></th>
-            <th class="table__failure"></th>
-            <th class="table__date"></th>
-        </tr>
-        <tr>
-            <th class="table__order">8</th>
-            <th class="table__name"></th>
-            <th class="table__offset"></th>
-            <th class="table__failure"></th>
-            <th class="table__date"></th>
+            <th class="table__failure">Ответы неправильные</th
         </tr>
     </table>
     `;

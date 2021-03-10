@@ -17,53 +17,11 @@ header {
   padding-left: 24px;
   padding-right: 24px;
   box-shadow: 5px 8px 10px #012913; }
-  header .dropdown {
-    position: relative;
-    display: inline-block;
-    width: 150px;
-    height: 30px;
-    background-color: #698c58;
-    border: 0.5px solid #3b5e29;
-    border-radius: 5px;
-    box-shadow: 2px 2px 2px #243e16; }
-    header .dropdown .account__login, header .dropdown .fa-sort-down {
-      padding-left: 10pt; }
-    header .dropdown p {
-      margin: 5px 0;
-      text-align: center;
-      color: #e9f29b; }
-    header .dropdown .account__arrow {
-      margin: 0; }
-    header .dropdown .dropdown__list {
-      position: absolute;
-      display: none;
-      width: 100%;
-      list-style-type: none;
-      padding: 0;
-      margin: 3px 0;
-      background-color: #ffffff;
-      box-sizing: border-box;
-      border-radius: 0 0 10px 10px; }
-  header .dropdown:hover .dropdown__list {
-    display: block;
-    width: 150px; }
-  header .dropdown:hover .dropdown__list li {
-    width: 150px;
-    text-align: center;
-    padding: 10px 0; }
-    header .dropdown:hover .dropdown__list li a {
-      text-decoration: none;
-      color: #18271b; }
-
-.dropdown:hover .dropdown__list {
-  display: block;
-  width: 130px; }
-
-.dropdown:hover .dropdown__list li {
-  width: 130px; }
 
 .account {
-  width: 200px; }
+  width: 250px;
+  display: flex;
+  justify-content: space-between; }
 
 .login-form .photo-sequence {
   padding: 5px 0;
@@ -74,6 +32,8 @@ header {
 .login-form form {
   display: flex;
   flex-direction: column; }
+  .login-form form .error {
+    color: #e40404; }
   .login-form form label {
     margin-top: 10px;
     margin-bottom: 5px;
@@ -115,6 +75,8 @@ header {
 .registration-form form {
   display: flex;
   flex-direction: column; }
+  .registration-form form .error {
+    color: #e40404; }
   .registration-form form label {
     margin-top: 10px;
     margin-bottom: 5px;
@@ -193,10 +155,12 @@ header {
     background-color: #698c58;
     color: #fefac0;
     text-shadow: 1px 1px 2px #062515; }
-  .records .table-title .table-points, .records .table-title .table-date {
+  .records .table-title .table-points, .records .table-title .table-date, .records .table-title .table-title-date, .records .table-title .table-title-points {
     color: #58764a;
     padding: 8px 10px;
     width: 125px; }
+  .records .table-title .table-title-date, .records .table-title .table-title-points {
+    background-color: #fefac0; }
   .records tr th {
     border: 1px solid #24311f; }
 
@@ -316,22 +280,23 @@ header {
 
 .account__buttons {
   display: flex;
-  width: 195px;
+  width: 230px;
   margin: 0;
   justify-content: space-between; }
-
-.button__registration, .button__login {
-  text-decoration: none;
-  text-align: center;
-  padding: 5px 15px 0 15px;
-  background: #698c58;
-  font-family: Play-Regular;
-  border-radius: 3px;
-  border: #355723;
-  height: 25px;
-  box-shadow: 2px 2px 3px #062515;
-  color: #fef8a0;
-  font-size: 15px; }
+  .account__buttons .email-user, .account__buttons .exit {
+    font-size: 14px;
+    padding-top: 7px; }
+  .account__buttons .button__registration, .account__buttons .button__login, .account__buttons .email-user, .account__buttons .exit {
+    text-decoration: none;
+    text-align: center;
+    padding: 5px 15px 0 15px;
+    background: #698c58;
+    font-family: Play-Regular;
+    border-radius: 3px;
+    border: #355723;
+    height: 25px;
+    box-shadow: 2px 2px 3px #062515;
+    color: #fef8a0; }
 
 .button__registration:hover, .button__login:hover {
   transform: translateY(-1px);

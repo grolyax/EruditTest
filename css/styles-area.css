@@ -17,10 +17,12 @@
     background-color: #698c58;
     color: #fefac0;
     text-shadow: 1px 1px 2px #062515; }
-  .records .table-title .table-points, .records .table-title .table-date {
+  .records .table-title .table-points, .records .table-title .table-date, .records .table-title .table-title-date, .records .table-title .table-title-points {
     color: #58764a;
     padding: 8px 10px;
     width: 125px; }
+  .records .table-title .table-title-date, .records .table-title .table-title-points {
+    background-color: #fefac0; }
   .records tr th {
     border: 1px solid #24311f; }
 
