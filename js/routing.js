@@ -124,3 +124,20 @@ export function navigateToUrl(url) {
 
   renderPage();
 }
+
+
+// используем эту функцию после каждого рендера, чтобы переписать поведение для появившихся на странице ссылок
+export const replaceLinksBehavior = () => {
+  const linkArray = Array.from(document.querySelectorAll('a')); // ищем все элементы ссылок на странице
+
+  linkArray.forEach(link => {
+      link.removeEventListener('click', linkBehaviorCallback); // удаляем ивент лисенеры, потому что если ивент лисенеры не удалять, то они накапливаются на одних и тех же элементах и перегружают страницу, всё начинает тормозить.
+      link.addEventListener('click', linkBehaviorCallback);
+  })
+}
+
+const linkBehaviorCallback = (event) => {
+  event.preventDefault(); // блокируем стандартный переход по ссылке, чтобы страница не перезагружалась
+  const linkElement = event.target.closest('a'); // если клик произошел не на сам <a> а на какой-то элемент внутри этого <a> например <p>География</p>
+  navigateToUrl(linkElement.href.match(':\/\/.+(?<href>\/.*)').groups.href); // регулярное выражение для отеделения последней части url. Пример: "http://127.0.0.1:5501/login" -> "/login"
+}

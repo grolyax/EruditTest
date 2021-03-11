@@ -730,5 +730,109 @@ export default {
             ],
             trueValue: 1
         }
+    ],
+    society: [
+        {
+            question: 'Кого называют "отцом экономики"?',
+            values: [
+                '../../pictures/imagesSociety/0/1.jpg',
+                '../../pictures/imagesSociety/0/2.jpg',
+                '../../pictures/imagesSociety/0/3.jpg',
+                '../../pictures/imagesSociety/0/4.jpg',
+            ],
+            trueValue: 1 
+        },
+     {
+            question: 'Укажите автора теории "трёх технологических волн"?',
+            values: [
+                '../../pictures/imagesSociety/1/1.jpg',
+                '../../pictures/imagesSociety/1/2.jpg',
+                '../../pictures/imagesSociety/1/3.jpg',
+                '../../pictures/imagesSociety/1/4.jpg',
+            ],
+            trueValue: 2 
+        },
+     {
+            question: 'Что из этого буддистский храм?',
+            values: [
+                '../../pictures/imagesSociety/2/1.jpg',
+                '../../pictures/imagesSociety/2/2.jpg',
+                '../../pictures/imagesSociety/2/3.jpg',
+                '../../pictures/imagesSociety/2/4.jpg',
+            ],
+            trueValue: 2 
+        },
+     {
+            question: 'Выберите изображение соответствующее типу темперамента ФЛЕГМАТИК?',
+            values: [
+                '../../pictures/imagesSociety/3/1.jpg',
+                '../../pictures/imagesSociety/3/2.jpg',
+                '../../pictures/imagesSociety/3/3.jpg',
+                '../../pictures/imagesSociety/3/4.jpg',
+            ],
+            trueValue: 2
+        },
+     {
+            question: 'Какое изображение соответствует понятию НЕПОЛНАЯ СЕМЬЯ?',
+            values: [
+                '../../pictures/imagesSociety/4/1.jpg',
+                '../../pictures/imagesSociety/4/2.jpg',
+                '../../pictures/imagesSociety/4/3.jpg',
+                '../../pictures/imagesSociety/4/4.jpg',
+            ],
+            trueValue: 3
+        },
+        {
+            question: 'Кого можно отнести к маргинальным слоям населения?',
+            values: [
+                '../../pictures/imagesSociety/5/1.jpg',
+                '../../pictures/imagesSociety/5/2.jpg',
+                '../../pictures/imagesSociety/5/3.jpg',
+                '../../pictures/imagesSociety/5/4.jpg',
+            ],
+            trueValue: 2
+        },
+        {
+            question: 'Каким словом мы сегодня называем человека, которого Пушкин в «Евгении Онегине» определил так: «дитя расчёта и отваги»?',
+            values: [
+                '../../pictures/imagesSociety/6/1.jpg',
+                '../../pictures/imagesSociety/6/2.jpg',
+                '../../pictures/imagesSociety/6/3.jpg',
+                '../../pictures/imagesSociety/6/4.jpg',
+            ],
+            trueValue: 0
+        },
+        {
+            question: '16) Ценная бумага, которая приносит владельцу доход в виде фиксированного процента и выкупается предприятием в указанный срок, называется:',
+            values: [
+                '../../pictures/imagesSociety/6/1.jpg',
+                '../../pictures/imagesSociety/6/2.jpg',
+                '../../pictures/imagesSociety/6/3.jpg',
+                '../../pictures/imagesSociety/6/4.jpg',
+            ],
+            trueValue: 2
+        },
+        {
+            question: 'Исследования показали, что желание посплетничать сильно связано с профессией человека. При этом самыми большими сплетниками оказались люди, работающие:',
+            values: [
+                '../../pictures/imagesSociety/6/1.jpg',
+                '../../pictures/imagesSociety/6/2.jpg',
+                '../../pictures/imagesSociety/6/3.jpg',
+                '../../pictures/imagesSociety/6/4.jpg',
+            ],
+            trueValue: 3
+        }   
+    ],
+    technique: [
+        {
+            question: 'Первый паровоз выглядел так:',
+            values: [
+                '../../pictures/imagesTechnique/0/1.jpg',
+                '../../pictures/imagesTechnique/0/2.jpg',
+                '../../pictures/imagesTechnique/0/3.jpg',
+                '../../pictures/imagesTechnique/0/4.jpg',
+            ],
+            trueValue: 1 
+        },
     ]
 }

@@ -12,7 +12,7 @@ const listOfTestTemplate = `
         <a href="/test?topic=nature" class="theme"><img src="pictures/icons/tree.png" width="40px" height="40px"><p>Природа</p></a>
         <a href="/test?topic=society"class="theme"><img src="pictures/icons/hand.png" width="40px" height="40px"><p>Общество</p></a>
         <a href="/test?topic=history"  class="theme"><img src="pictures/icons/sand-clock.png" width="40px" height="40px"><p>История</p></a>
-        <a class="theme"><img src="pictures/icons/techn.png" width="40px" height="40px"><p>Техника</p></a>
+        <a href="/test?topic=technique" class="theme"><img src="pictures/icons/techn.png" width="40px" height="40px"><p>Техника</p></a>
     </div>
 </div>
 <img class="arrows" src="pictures/icons/down-arrow.png" width="30px" height="20px">
