@@ -1,5 +1,6 @@
 import registrationTemplate from '../templates/pages/registration/index.js';
 import registerUser from '../auth/register-user.js';
+import { replaceLinksBehavior } from '../routing.js';
 
 export default function renderRegistration() {
     const rootDiv = document.querySelector('.container');
@@ -7,4 +8,6 @@ export default function renderRegistration() {
     
     const registrationForm = document.querySelector('.registration-form > form');
     registrationForm.addEventListener('submit', registerUser);
+
+    replaceLinksBehavior();
 }

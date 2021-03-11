@@ -12,6 +12,7 @@ import userList from '../users.js';
 import storageService from '../storage-service.js';
 import { translateTopic } from '../render/render-main-personal.js';
 
+
 let textQuiz = [];
 let pictQuiz = [];
 let questionsUsed = [];

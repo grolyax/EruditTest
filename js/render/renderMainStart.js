@@ -2,6 +2,7 @@
 import mainStartTemplate from '../templates/pages/mainStart/index.js';
 import headerAccountTemplate from '../templates/pages/headerAccount/index.js';
 import { navigateToUrl } from '../routing.js';
+import { replaceLinksBehavior } from '../routing.js';
 
 const startQuiz = [
     {
@@ -85,6 +86,7 @@ export default function renderMainStart() {
     rootDiv.innerHTML = mainStartTemplate;
 
     renderStartTest(startQuiz);
+    replaceLinksBehavior();
 }
 
 

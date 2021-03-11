@@ -3,6 +3,7 @@ import renderHeaderCurrentUser from '../render/renderHeaderCurrentUser.js';
 import currentUser from '../current-user.js';
 import userList from '../users.js';
 import { translateTopic } from '../render/render-main-personal.js';
+import { replaceLinksBehavior } from '../routing.js';
 
 export const MAX_TABLE_SIZE = 8;
 
@@ -42,5 +43,6 @@ const renderTable = (topic) => {
         `
         tableElement.appendChild(trElement);
 
+        replaceLinksBehavior();
     })
 }

@@ -1,6 +1,8 @@
 import HeaderCurrentUserTemplate from '../templates/pages/headerCurrentUser/index.js';
 import logoutUser from '../auth/logout-user.js';
 import currentUser from '../current-user.js';
+import { replaceLinksBehavior } from '../routing.js';
+
 export default function  renderHeaderCurrentUser() {
 
     const headerDiv = document.querySelector('.account');
@@ -11,4 +13,6 @@ export default function  renderHeaderCurrentUser() {
 
     const loginCurrentUser = document.querySelector('.email-user');
     loginCurrentUser.textContent = currentUser.userData.email;
+
+    replaceLinksBehavior();
 }

@@ -1,10 +1,13 @@
 import personAreaTemplate from '../templates/pages/mainPersonal/index.js';
 import renderHeaderCurrentUser from '../render/renderHeaderCurrentUser.js';
 import currentUser from '../current-user.js';
+import { replaceLinksBehavior } from '../routing.js';
 
 export default function renderMainPersonal() {
     const rootDiv = document.querySelector('.container');
     rootDiv.innerHTML = personAreaTemplate;
+
+    replaceLinksBehavior();
 
     renderHeaderCurrentUser();
     renderTable();
