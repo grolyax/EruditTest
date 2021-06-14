@@ -1,95 +1,92 @@
-const imgQuiz = [
+export let pictQuizTechnique = [
     {
-        question: 'Этот политический деятель написал более 500 картин, 50 из которых были выставлены на профессиональном уровне. Пикассо говорил, что политик мог бы выбрать искусство в качестве карьеры. Как зовут этого человека?',
+        question: 'Первый паровоз выглядел так:',
         values: [
-            './picture/imagesHistory/0/churchill.jpeg',
-            './picture/imagesHistory/0/gitler.jpeg',
-            './picture/imagesHistory/0/roosevelt.jpeg',
-            './picture/imagesHistory/0/goll.jpeg',
+            '../../../pictures/imagesTechnique/0/1.jpg',
+            '../../../pictures/imagesTechnique/0/2.jpg',
+            '../../../pictures/imagesTechnique/0/3.jpg',
+            '../../../pictures/imagesTechnique/0/4.jpg',
         ],
-        trueValue: 0  
+        trueValue: 1
     },
     {
-        question: 'Какая картина выполнена Иеронимом Босхом?',
+        question: 'Что из представленного на картинке было изобретено не в XIX веке?',
         values: [
-            './picture/imagesHistory/1/небосх.jpeg',
-            './picture/imagesHistory/1/босх.jpeg',
-            './picture/imagesHistory/1/небосх.jpeg',
-            './picture/imagesHistory/1/небосх.jpeg',
+            '../../../pictures/imagesTechnique/1/1.jpeg',
+            '../../../pictures/imagesTechnique/1/2.jpeg',
+            '../../../pictures/imagesTechnique/1/3.jpeg',
+            '../../vpictures/imagesTechnique/1/4.jpeg',
         ],
-        trueValue: 1  
+        trueValue: 3
     },
     {
-        question: 'Какая картина отображает события "Ледового побоища"?',
+        question: 'На какой картинке изображена астролябия?',
         values: [
-            './picture/imagesHistory/2/неледовое.jpeg',
-            './picture/imagesHistory/2/неледовое.jpeg',
-            './picture/imagesHistory/2/ледовое.jpeg',
-            './picture/imagesHistory/2/неледовое.jpeg',
+            '../../../pictures/imagesTechnique/2/1.jpeg',
+            '../../../pictures/imagesTechnique/2/2.jpeg',
+            '../../../pictures/imagesTechnique/2/3.jpeg',
+            '../../../pictures/imagesTechnique/2/4.jpeg',
         ],
-        trueValue: 2  
+        trueValue: 0
     },
     {
-        question: 'Кто сказал: «Принцип «око за око» сделает весь мир слепым»?',
+        question: 'На какой картинке изображён сейсмограф?2',
         values: [
-            './picture/imagesHistory/3/неганди.jpeg',
-            './picture/imagesHistory/3/неганди.jpeg',
-            './picture/imagesHistory/3/неганди.jpeg',
-            './picture/imagesHistory/3/ганди.jpeg',
+            '../../../pictures/imagesTechnique/3/1.jpeg',
+            '../../../pictures/imagesTechnique/3/2.jpeg',
+            '../../../pictures/imagesTechnique/3/3.jpeg',
+            '../../../pictures/imagesTechnique/3/4.jpg',
         ],
-        trueValue: 3  
+        trueValue: 1
     },
     {
-        question: 'Кто получил прозвище «бабушка Европы»?',
+        question: 'В честь какого великого изобретателя Илон Маск назвал компанию?',
         values: [
-            './picture/imagesHistory/4/виктория.jpeg',
-            './picture/imagesHistory/4/невиктория.jpeg',
-            './picture/imagesHistory/4/невиктория.jpeg',
-            './picture/imagesHistory/4/невиктория.jpeg',
+            '../../../pictures/imagesTechnique/4/1.jpeg',
+            '../../../pictures/imagesTechnique/4/2.jpeg',
+            '../../../pictures/imagesTechnique/4/3.jpeg',
+            '../../../pictures/imagesTechnique/4/4.jpeg',
         ],
-        trueValue: 0  
+        trueValue: 2
     },
     {
-        question: 'Кто получил прозвище «Беспокойный Теодор»?',
+        question: 'Выберите из представленных парусников бриг',
         values: [
-            './picture/imagesHistory/5/не.jpeg',
-            './picture/imagesHistory/5/рузвельт.jpeg',
-            './picture/imagesHistory/5/не.jpeg',
-            './picture/imagesHistory/5/не.jpeg',
+            '../../../pictures/imagesTechnique/5/1.jpeg',
+            '../../../pictures/imagesTechnique/5/2.jpeg',
+            '../../../pictures/imagesTechnique/5/3.jpeg',
+            '../../../pictures/imagesTechnique/5/4.jpeg',
         ],
-        trueValue: 1  
+        trueValue: 0
     },
     {
-        question: 'Кому принадлежит фраза «Атомная бомба - бумажный тигр...»?',
+        question: 'Выберите из представленных парусников шхуну',
         values: [
-            './picture/imagesHistory/6/не.jpeg',
-            './picture/imagesHistory/6/не.jpeg',
-            './picture/imagesHistory/6/не.jpeg',
-            './picture/imagesHistory/6/маоjpeg',
+            '../../../pictures/imagesTechnique/5/1.jpeg',
+            '../../../pictures/imagesTechnique/5/2.jpeg',
+            '../../../pictures/imagesTechnique/5/3.jpeg',
+            '../../../pictures/imagesTechnique/5/4.jpeg',
         ],
-        trueValue: 3  
+        trueValue: 2
+    },
+    {
+        question: 'Выберите из представленных парусников галеон',
+        values: [
+            '../../../pictures/imagesTechnique/5/1.jpeg',
+            '../../../pictures/imagesTechnique/5/2.jpeg',
+            '../../../pictures/imagesTechnique/5/3.jpeg',
+            '../../../pictures/imagesTechnique/5/4.jpeg',
+        ],
+        trueValue: 1
+    },
+    {
+        question: 'Выберите из представленных парусников бригантину',
+        values: [
+            '../../../pictures/imagesTechnique/5/1.jpeg',
+            '../../../pictures/imagesTechnique/5/2.jpeg',
+            '../../../pictures/imagesTechnique/5/3.jpeg',
+            '../../../pictures/imagesTechnique/5/4.jpeg',
+        ],
+        trueValue: 3
     }
-]
-
-/* 
-let src = 'http://habrastorage.org/getpro/toster/6ec5a678/f246/4a66/6ec5a678-f246-4a66-93aa-9d23a154c62c/gruffi.gif';
-document.getElementById('click').onclick = function() {
-    document.getElementById('user-avatar').src = src;
-} */
-
-
-
-// var img = document.createElement("IMG");
-// img.src = "upload/medialibrary/e60/e605f52693f032eb03f46ffde79ef5bf.jpg";
-
-// test.innerHTML += "<img src=\"" + img + "\" width=\"200\" height=\"200\">";
-/*
- answers.push(
-                    '<label>'
-                        + '<input type="radio" name="question'+i+'" value="'+letter+'">'
-                        + letter + ': '
-                        + questions[i].answers[letter]
-                    + '</label>'
-                );
-*/
-               
+];

@@ -262,6 +262,9 @@ header {
 .test__form {
   overflow: hidden; }
 
+.answer1:hover {
+  background-color: gray; }
+
 .records__test {
   border: 1px solid #1e2919;
   border-collapse: collapse;
@@ -349,9 +352,13 @@ label:hover {
   cursor: pointer; }
 
 html, body {
+  position: relative;
   margin: 0;
   padding: 0;
   font-family: Play-Regular; }
+  html canvas, body canvas {
+    position: absolute;
+    transform: translate(-300px, -200px); }
   html h1, body h1 {
     margin: 0;
     font-family: FontdinerSwanky-Regular;
@@ -360,6 +367,9 @@ html, body {
     html h1 a, body h1 a {
       text-decoration: none;
       color: #e9f29b; }
+  html a, body a {
+    text-decoration: underline;
+    cursor: pointer; }
 
 body {
   background: #89b175;

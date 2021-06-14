@@ -5,10 +5,7 @@ import { generateId } from '../utils.js';
 import currentUser from '../current-user.js';
 import { checkIfHasErrors } from '../utils.js';
 import { showErrors } from '../utils.js';
-
-const EMAIL_REGEX = /\S+@\S+\.\S+/; //регулярное выражение для проверки, емэйла
-const MIN_PASSWORD_LENGTH = 8;
-const PASSWORD_REGEX = /(([A-Za-z]+\d+)|(\d+[A-Za-z]+))[A-Za-z\d]/;
+import { EMAIL_REGEX, MIN_PASSWORD_LENGTH, PASSWORD_REGEX } from '../constants.js'
 
 function validateRegistration({ email, password, repeatPassword }) {
     let errors = {
@@ -77,7 +74,40 @@ export default function registerUser(event) {
         id: generateId(userList.users),
         email,
         password: hashedPassword.toString(),
-        score: {history: 0, literature: 0, geography: 0, architecture: 0, nature: 0, society: 0, technique: 0, politics: 0,}, 
+        score: {
+            history: { 
+                record: 0, 
+                date: '',
+                },
+            literature: { 
+                record: 0,
+                date: '',
+                },
+            geography: { 
+                record: 0,
+                date: '',
+                },    
+            architecture: { 
+                record: 0,
+                date: '',
+                },
+            nature: { 
+                record: 0,
+                date: '',
+                }, 
+            society: { 
+                record: 0,
+                date: '',
+                }, 
+            technique: { 
+                record: 0,
+                date: '',
+                },
+            politics: { 
+                record: 0,
+                date: '',
+                },
+        }, 
     };
     
 

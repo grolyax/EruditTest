@@ -27,7 +27,7 @@ export default function renderResultTest() {
 const renderTable = (topic) => {
     let newUserList = [...userList.users];
     newUserList.sort((userA, userB) => {
-        return userB.score[topic] - userA.score[topic];
+        return userB.score[topic].record - userA.score[topic].record;
     });
     newUserList = newUserList.slice(0, MAX_TABLE_SIZE);
 
@@ -38,8 +38,9 @@ const renderTable = (topic) => {
         trElement.innerHTML = `
             <th class="table__order">${index + 1}</th>
             <th class="table__name">${user.email}</th>
-            <th class="table__offset">${user.score[topic]}</th>
-            <th class="table__failure">${20 - user.score[topic]}</th>
+            <th class="table__offset">${user.score[topic].record}</th>
+            <th class="table__failure">${20 - user.score[topic].record}</th>
+            <th class="table__date">${user.score[topic].date}</th>
         `
         tableElement.appendChild(trElement);
 

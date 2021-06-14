@@ -1,95 +1,162 @@
-const imgQuiz = [
+export let pictQuizNature = [
     {
-        question: 'Этот политический деятель написал более 500 картин, 50 из которых были выставлены на профессиональном уровне. Пикассо говорил, что политик мог бы выбрать искусство в качестве карьеры. Как зовут этого человека?',
+        question: 'У кого кровь жёлтая?',
         values: [
-            './picture/imagesHistory/0/churchill.jpeg',
-            './picture/imagesHistory/0/gitler.jpeg',
-            './picture/imagesHistory/0/roosevelt.jpeg',
-            './picture/imagesHistory/0/goll.jpeg',
+            '../../../pictures/imagesNature/0/ant.jpg',
+            '../../../pictures/imagesNature/0/fish.jpg',
+            '../../../pictures/imagesNature/0/cancer.jpg',
+            '../../../pictures/imagesNature/0/frog.jpg',
         ],
-        trueValue: 0  
+        trueValue: 0
     },
     {
-        question: 'Какая картина выполнена Иеронимом Босхом?',
+        question: 'Самые многочисленные существа на Земле это...',
         values: [
-            './picture/imagesHistory/1/небосх.jpeg',
-            './picture/imagesHistory/1/босх.jpeg',
-            './picture/imagesHistory/1/небосх.jpeg',
-            './picture/imagesHistory/1/небосх.jpeg',
+            '../../../pictures/imagesNature/1/people.jpg',
+            '../../../pictures/imagesNature/1/insect.jpg',
+            '../../../pictures/imagesNature/1/water.jpg',
+            '../../../pictures/imagesNature/1/mouse.jpg',
         ],
-        trueValue: 1  
+        trueValue: 2
     },
     {
-        question: 'Какая картина отображает события "Ледового побоища"?',
+        question: 'Самые сильные существа в мире это...',
         values: [
-            './picture/imagesHistory/2/неледовое.jpeg',
-            './picture/imagesHistory/2/неледовое.jpeg',
-            './picture/imagesHistory/2/ледовое.jpeg',
-            './picture/imagesHistory/2/неледовое.jpeg',
+            '../../../pictures/imagesNature/2/ant.jpg',
+            '../../../pictures/imagesNature/2/gorila.jpg',
+            '../../../pictures/imagesNature/2/gepard.jpg',
+            '../../../pictures/imagesNature/2/bug.jpg',
         ],
-        trueValue: 2  
+        trueValue: 0
     },
     {
-        question: 'Кто сказал: «Принцип «око за око» сделает весь мир слепым»?',
+        question: 'Пятая планета от солнца изображена на картинке...',
         values: [
-            './picture/imagesHistory/3/неганди.jpeg',
-            './picture/imagesHistory/3/неганди.jpeg',
-            './picture/imagesHistory/3/неганди.jpeg',
-            './picture/imagesHistory/3/ганди.jpeg',
+            '../../../pictures/imagesNature/3/neptun.jpg',
+            '../../../pictures/imagesNature/3/saturn.jpg',
+            '../../../pictures/imagesNature/3/earth.jpg',
+            '../../../pictures/imagesNature/3/upiter.jpg',
         ],
-        trueValue: 3  
+        trueValue: 3
     },
     {
-        question: 'Кто получил прозвище «бабушка Европы»?',
+        question: 'Что из предложенного не является ягодой?',
         values: [
-            './picture/imagesHistory/4/виктория.jpeg',
-            './picture/imagesHistory/4/невиктория.jpeg',
-            './picture/imagesHistory/4/невиктория.jpeg',
-            './picture/imagesHistory/4/невиктория.jpeg',
+            '../../../pictures/imagesNature/4/kiwi.jpg',
+            '../../../pictures/imagesNature/4/banan.jpg',
+            '../../../pictures/imagesNature/4/apple.jpg',
+            '../../../pictures/imagesNature/4/hurma.jpg',
         ],
-        trueValue: 0  
+        trueValue: 2
     },
     {
-        question: 'Кто получил прозвище «Беспокойный Теодор»?',
+        question: 'На какой из фотографий изображён ягуар?',
         values: [
-            './picture/imagesHistory/5/не.jpeg',
-            './picture/imagesHistory/5/рузвельт.jpeg',
-            './picture/imagesHistory/5/не.jpeg',
-            './picture/imagesHistory/5/не.jpeg',
+            '../../../pictures/imagesNature/5/gepard.jpg',
+            '../../../pictures/imagesNature/5/jaguatirica.jpg',
+            '../../../pictures/imagesNature/5/jaguar.jpg',
+            '../../../pictures/imagesNature/5/leopard.jpg',
         ],
-        trueValue: 1  
+        trueValue: 0
     },
     {
-        question: 'Кому принадлежит фраза «Атомная бомба - бумажный тигр...»?',
+        question: 'На каком фото изображен шершень?',
         values: [
-            './picture/imagesHistory/6/не.jpeg',
-            './picture/imagesHistory/6/не.jpeg',
-            './picture/imagesHistory/6/не.jpeg',
-            './picture/imagesHistory/6/маоjpeg',
+            '../../../pictures/imagesNature/6/hornet-vespa.jpg',
+            '../../../pictures/imagesNature/6/Pchela.jpg',
+            '../../../pictures/imagesNature/6/pexels.jpeg',
+            '../../../pictures/imagesNature/6/shmel.jpg',
         ],
-        trueValue: 3  
+        trueValue: 0
+    },
+    {
+        question: 'На какой из фотографий изображён грач?',
+        values: [
+            '../../../pictures/imagesNature/7/craw.jpg',
+            '../../../pictures/imagesNature/7/Corvus.jpg',
+            '../../../pictures/imagesNature/7/crow-black.jpg',
+            '../../../pictures/imagesNature/7/jackdaw.jpg',
+        ],
+        trueValue: 1
+    },
+    {
+        question: 'На какой из фотографий изображена папайя?',
+        values: [
+            '../../../pictures/imagesNature/8/jackfruit.jpg',
+            '../../../pictures/imagesNature/8/kiwi.jpg',
+            '../../../pictures/imagesNature/8/papaya.jpg',
+            '../../../pictures/imagesNature/8/lychee.jpg',
+        ],
+        trueValue: 2
+    },
+    {
+        question: 'На какой из фотографий изображено растение такка?',
+        values: [
+            '../../../pictures/imagesNature/9/Venus.jpg',
+            '../../../pictures/imagesNature/9/tacca.jpg',
+            '../../../pictures/imagesNature/9/Victoria.jpg',
+            '../../../pictures/imagesNature/9/nepentes.jpg',
+        ],
+        trueValue: 1
+    },
+    {
+        question: 'Перед вами водопады: Кхон, Анхель, Ниагарский, Игуасу. Какой из них самый широкий?',
+        values: [
+            '../../../pictures/imagesNature/10/ckhon.jpg',
+            '../../../pictures/imagesNature/10/Anhel.jpg',
+            '../../../pictures/imagesNature/10/Niagara.jpg',
+            '../../../pictures/imagesNature/10/Iguasu.jpg',
+        ],
+        trueValue: 0
+    },
+    {
+        question: 'Перед вами водопады: Кхон, Анхель, Ниагарский, Игуасу. Какой из них самый мощный?',
+        values: [
+            '../../../pictures/imagesNature/10/ckhon.jpg',
+            '../../../pictures/imagesNature/10/Anhel.jpg',
+            '../../../pictures/imagesNature/10/Niagara.jpg',
+            '../../../pictures/imagesNature/10/Iguasu.jpg',
+        ],
+        trueValue: 3
+    },
+    {
+        question: 'Перед вами водопады: Кхон, Анхель, Ниагарский, Игуасу. Какой из них самый высокий?',
+        values: [
+            '../../../pictures/imagesNature/10/ckhon.jpg',
+            '../../../pictures/imagesNature/10/Anhel.jpg',
+            '../../../pictures/imagesNature/10/Niagara.jpg',
+            '../../../pictures/imagesNature/10/Iguasu.jpg',
+        ],
+        trueValue: 1
+    },
+    {
+        question: 'Перед вами водопады: Кхон, Анхель, Ниагарский, Игуасу. Какой из них самый "шагающий""?',
+        values: [
+            '../../../pictures/imagesNature/10/ckhon.jpg',
+            '../../../pictures/imagesNature/10/Anhel.jpg',
+            '../../../pictures/imagesNature/10/Niagara.jpg',
+            '../../../pictures/imagesNature/10/Iguasu.jpg',
+        ],
+        trueValue: 2
+    },
+    {
+        question: 'На какой из картинок изображено животное,которое не является рептилией? ',
+        values: [
+            '../../../pictures/imagesNature/11/1.jpg',
+            '../../../pictures/imagesNature/11/2.jpg',
+            '../../../pictures/imagesNature/11/3.jpg',
+            '../../../pictures/imagesNature/11/4.jpg',
+        ],
+        trueValue: 2
+    },
+    {
+        question: 'На какой картинке изображено самое быстрое животное на Земле?',
+        values: [
+            '../../../pictures/imagesNature/12/1.jpg',
+            '../../../pictures/imagesNature/12/2.jpg',
+            '../../../pictures/imagesNature/12/3.jpg',
+            '../../../pictures/imagesNature/12/4.jpg',
+        ],
+        trueValue: 1
     }
-]
-
-/* 
-let src = 'http://habrastorage.org/getpro/toster/6ec5a678/f246/4a66/6ec5a678-f246-4a66-93aa-9d23a154c62c/gruffi.gif';
-document.getElementById('click').onclick = function() {
-    document.getElementById('user-avatar').src = src;
-} */
-
-
-
-// var img = document.createElement("IMG");
-// img.src = "upload/medialibrary/e60/e605f52693f032eb03f46ffde79ef5bf.jpg";
-
-// test.innerHTML += "<img src=\"" + img + "\" width=\"200\" height=\"200\">";
-/*
- answers.push(
-                    '<label>'
-                        + '<input type="radio" name="question'+i+'" value="'+letter+'">'
-                        + letter + ': '
-                        + questions[i].answers[letter]
-                    + '</label>'
-                );
-*/
-               
+];

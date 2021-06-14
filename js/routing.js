@@ -8,6 +8,7 @@ import renderNextStartFalse from './render/renderAnswerFalse.js';
 import renderTest from './render/renderTest.js';
 import renderResultTest from './render/render-result-test.js';
 import renderMainPersonal from './render/render-main-personal.js';
+import { drawStar } from './draw-result-sign.js'
 
 const listRoutePattern = /^\/list\/\d+$/;
 const INDEX_URLS = ['/', '/index.html'];
@@ -16,13 +17,13 @@ const LOGIN_URL = '/login';
 const STARTTRUE_URL = '/mainStartNextTrue';
 const STARTFALSE_URL = '/mainStartNextFalse';
 const RESULT_TEST_URL = '/resultTest';
-const LIST_OFTEST_URL = '/listOfTests'; // проверочный - потом  исправить
+const LIST_OFTEST_URL = '/listOfTests'; 
 const TEST_URL = '/test';
 const PERSONAL__URL = '/mainPersonal';
 
 export function renderPage() {
   const { pathname: currentUrl } = window.location;
-
+  drawStar();
   if (INDEX_URLS.includes(currentUrl)) {
     if (currentUser.userData !== null) {
       renderMainPersonal();
@@ -102,6 +103,7 @@ export function renderPage() {
     RepeatTest.addEventListener('submit', renderTest);
     return
   }
+
 
   /*
     if (listRoutePattern.test(currentUrl)) {

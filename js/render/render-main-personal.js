@@ -22,7 +22,8 @@ const renderTable = () => {
         let trElement = document.createElement('tr');
         trElement.innerHTML = `
         <th class="table-thems">${translateTopic(key)}</th>
-        <th class="table-points">${currentUser.userData.score[key]}</th>
+        <th class="table-points">${currentUser.userData.score[key].record}</th>
+        <th class="date">${currentUser.userData.score[key].date}</th>
     `
      tableElement.appendChild(trElement);
     });

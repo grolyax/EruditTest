@@ -12,7 +12,6 @@ import userList from '../users.js';
 import storageService from '../storage-service.js';
 import { translateTopic } from '../render/render-main-personal.js';
 
-
 let textQuiz = [];
 let pictQuiz = [];
 let questionsUsed = [];
@@ -42,30 +41,30 @@ const randomQuestion = () => {
         return;
     } else {
         if (questionsUsed.length > 0) {
-        questionsUsed.forEach(item => {
-            if (item === randomNumber) {
-                hitDuplicate = true;
-            }
-        });
-        if (hitDuplicate) {
-            randomQuestion();
+            questionsUsed.forEach(item => {
+                if (item === randomNumber) {
+                    hitDuplicate = true;
+                }
+            });
+            if (hitDuplicate) {
+                randomQuestion();
 
-            return;
-        } else {
+                return;
+            } else {
+                indexOfQuestion = randomNumber;
+                renderValueTextTest();
+            }
+        };
+        if (questionsUsed.length === 0) {
             indexOfQuestion = randomNumber;
             renderValueTextTest();
         }
     };
-    if (questionsUsed.length === 0) {
-        indexOfQuestion = randomNumber;
-        renderValueTextTest();
-    }     
-};
 
-questionsUsed.push(indexOfQuestion);
-console.log(questionsUsed);
-const numberOfQuestion = document.getElementById('number__question');
-numberOfQuestion.innerText = questionsUsed.length;
+    questionsUsed.push(indexOfQuestion);
+    console.log(questionsUsed);
+    const numberOfQuestion = document.getElementById('number__question');
+    numberOfQuestion.innerText = questionsUsed.length;
 };
 
 function renderValueTextTest() {
@@ -90,14 +89,15 @@ const randomPictQuestion = () => {
 
     if (questionsUsed2.length > 4) {
         let topic = window.location.href.match('topic=(?<topic>.+)').groups.topic;
-    
-    userList.updateUserScoreById(currentUser.userData.id, topic, score);
-    storageService.set('users', JSON.stringify(userList.users));
-    currentUser.userData = userList.getUserByEmail(currentUser.userData.email); // должен идти перед currentScore, так как он временное поле
-    currentUser.userData.currentScore = score;
-    storageService.set('currentUser', JSON.stringify(currentUser.userData));
-    navigateToUrl(`/resultTest?topic=${topic}`);
-        
+        let dateString = (new Date()).toLocaleDateString();
+
+        userList.updateUserScoreById(currentUser.userData.id, topic, score, dateString);
+        storageService.set('users', JSON.stringify(userList.users));
+        currentUser.userData = userList.getUserByEmail(currentUser.userData.email); // должен идти перед currentScore, так как он временное поле
+        currentUser.userData.currentScore = score;
+        storageService.set('currentUser', JSON.stringify(currentUser.userData));
+        navigateToUrl(`/resultTest?topic=${topic}`);
+
         return;
     } else {
         if (questionsUsed2.length > 0) {
@@ -144,8 +144,10 @@ function renderValuePictTest() {
 const checkCorrectness = () => {
     const inputArray = document.querySelectorAll('input[type="radio"]');
     inputArray.forEach(input => {
+
         const numberOfQuestion = document.getElementById('number__question');
         if (numberOfQuestion.innerText <= 15) {
+
             if (input.checked && input.id[input.id.length - 1] - 1 === textQuiz[indexOfQuestion].trueValue) {
                 score++;
             }
@@ -171,7 +173,6 @@ const createButtonListeners = () => {
             if (input.checked) {
                 checkCorrectness();
                 randomQuestion();
-
                 progressBarElement.style.width = `${progressBarElement.clientWidth + 25}px`;
             }
         })
@@ -179,6 +180,13 @@ const createButtonListeners = () => {
 };
 
 export default function renderTest() {
+    textQuiz = [];
+    pictQuiz = [];
+    questionsUsed = [];
+    questionsUsed2 = [];
+    indexOfQuestion;
+    score = 0;
+
     let topic = window.location.href.match('topic=(?<topic>.+)').groups.topic;
 
     textQuiz = textTestList[topic];

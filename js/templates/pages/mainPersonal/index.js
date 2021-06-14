@@ -4,6 +4,7 @@ const personAreaTemplate = `
                 <tr class="table-title">
                     <th class="table-title-thems">Темы</th>
                     <th class="table-title-points">Баллы</th>
+                    <th class="table-title-date">Дата</th>
                    </tr>
             </table>
             <div class="button-tests">

@@ -14,7 +14,8 @@ const resultTestTemplate = `
             <th class="table__order">№</th>
             <th class="table__name">Имя</th>
             <th class="table__offset">Ответы правильные</th>
-            <th class="table__failure">Ответы неправильные</th
+            <th class="table__failure">Ответы неправильные</th>
+            <th class="table__date">Дата</th>
         </tr>
     </table>
     `;

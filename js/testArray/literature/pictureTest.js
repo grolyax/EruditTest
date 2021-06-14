@@ -1,95 +1,91 @@
-const imgQuiz = [
+export let pictQuizLiterature = [
     {
-        question: 'Этот политический деятель написал более 500 картин, 50 из которых были выставлены на профессиональном уровне. Пикассо говорил, что политик мог бы выбрать искусство в качестве карьеры. Как зовут этого человека?',
+        question: 'Укажите автора романа антиутопии "1984"',
         values: [
-            './picture/imagesHistory/0/churchill.jpeg',
-            './picture/imagesHistory/0/gitler.jpeg',
-            './picture/imagesHistory/0/roosevelt.jpeg',
-            './picture/imagesHistory/0/goll.jpeg',
+            '../../../pictures/imagesLiterature/0/oruwel.jpg',
+            '../../../pictures/imagesLiterature/0/Huksly.jpg',
+            '../../../pictures/imagesLiterature/0/Birdjes.jpg',
+            '../../../pictures/imagesLiterature/0/Golding.jpg',
         ],
-        trueValue: 0  
+        trueValue: 0
     },
     {
-        question: 'Какая картина выполнена Иеронимом Босхом?',
+        question: 'Какой из кадров не является экранизацией романа Шолохова "Тихий Дон"',
         values: [
-            './picture/imagesHistory/1/небосх.jpeg',
-            './picture/imagesHistory/1/босх.jpeg',
-            './picture/imagesHistory/1/небосх.jpeg',
-            './picture/imagesHistory/1/небосх.jpeg',
+            '../../../pictures/imagesLiterature/1/1.jpg',
+            '../../../pictures/imagesLiterature/1/2.jpg',
+            '../../../pictures/imagesLiterature/1/3.png',
+            '../../../pictures/imagesLiterature/1/4.jpg',
         ],
-        trueValue: 1  
+        trueValue: 3
     },
     {
-        question: 'Какая картина отображает события "Ледового побоища"?',
+        question: 'Укажите на фотографии главу колхоза и героя экранизации "Поднятая целина" Семена Давыдова',
         values: [
-            './picture/imagesHistory/2/неледовое.jpeg',
-            './picture/imagesHistory/2/неледовое.jpeg',
-            './picture/imagesHistory/2/ледовое.jpeg',
-            './picture/imagesHistory/2/неледовое.jpeg',
+            '../../../pictures/imagesLiterature/2/1.jpg',
+            '../../../pictures/imagesLiterature/2/2.jpg',
+            '../../../pictures/imagesLiterature/2/3.jpg',
+            '../../../pictures/imagesLiterature/2/4.jpg',
         ],
-        trueValue: 2  
+        trueValue: 2
     },
     {
-        question: 'Кто сказал: «Принцип «око за око» сделает весь мир слепым»?',
+        question: 'Выберите номер картинки, на котором изображен главный герой романа"Мастер и Маргарита".',
         values: [
-            './picture/imagesHistory/3/неганди.jpeg',
-            './picture/imagesHistory/3/неганди.jpeg',
-            './picture/imagesHistory/3/неганди.jpeg',
-            './picture/imagesHistory/3/ганди.jpeg',
+            '../../../pictures/imagesLiterature/3/1.jpg',
+            '../../../pictures/imagesLiterature/3/2.jpg',
+            '../../../pictures/imagesLiterature/3/3.jpg',
+            '../../../pictures/imagesLiterature/3/4.jpg',
         ],
-        trueValue: 3  
+        trueValue: 2
     },
     {
-        question: 'Кто получил прозвище «бабушка Европы»?',
+        question: '"Гордая, обидчивая, капризная. У нее трудный характер, она любит себя и ждёт заботы и комплиментов.",-выберите картинку с персонажем, о котором говорится в тексте:',
         values: [
-            './picture/imagesHistory/4/виктория.jpeg',
-            './picture/imagesHistory/4/невиктория.jpeg',
-            './picture/imagesHistory/4/невиктория.jpeg',
-            './picture/imagesHistory/4/невиктория.jpeg',
+            '../../../pictures/imagesLiterature/4/1.jpg',
+            '../../../pictures/imagesLiterature/4/2.jpg',
+            '../../../pictures/imagesLiterature/4/3.jpg',
+            '../../../pictures/imagesLiterature/4/4.jpg',
         ],
-        trueValue: 0  
+        trueValue: 3
     },
     {
-        question: 'Кто получил прозвище «Беспокойный Теодор»?',
+        question: 'Какому автору принадлежит эта строка: «Мой дядя самых честных правил...»',
         values: [
-            './picture/imagesHistory/5/не.jpeg',
-            './picture/imagesHistory/5/рузвельт.jpeg',
-            './picture/imagesHistory/5/не.jpeg',
-            './picture/imagesHistory/5/не.jpeg',
+            '../../../pictures/imagesLiterature/5/1.jpeg',
+            '../../../pictures/imagesLiterature/5/2.jpg',
+            '../../../pictures/imagesLiterature/5/3.jpeg',
+            '../../../pictures/imagesLiterature/5/4.jpeg',
         ],
-        trueValue: 1  
+        trueValue: 0
     },
     {
-        question: 'Кому принадлежит фраза «Атомная бомба - бумажный тигр...»?',
+        question: 'Какой кадр НЕ имеет отношение к Эдуарду Успенскому?',
         values: [
-            './picture/imagesHistory/6/не.jpeg',
-            './picture/imagesHistory/6/не.jpeg',
-            './picture/imagesHistory/6/не.jpeg',
-            './picture/imagesHistory/6/маоjpeg',
+            '../../../pictures/imagesLiterature/6/1.jpeg',
+            '../../../pictures/imagesLiterature/6/2.jpeg',
+            '../../../pictures/imagesLiterature/6/3.jpeg',
+            '../../../pictures/imagesLiterature/6/4.png',
         ],
-        trueValue: 3  
+        trueValue: 2
+    },
+    {
+        question: 'Где происходит действие романа "Мастер и Маргарита"?',
+        values: [
+            '../../../pictures/imagesLiterature/7/1.jpg',
+            '../../../pictures/imagesLiterature/7/2.jpg',
+            '../../../pictures/imagesLiterature/7/3.jpg',
+            '../../../pictures/imagesLiterature/7/4.jpg',
+        ],
+        trueValue: 1
+    }, {
+        question: 'На какой из фотографии изображен кадр из фильма"Герой нашего времени"?',
+        values: [
+            '../../../pictures/imagesLiterature/8/1.jpg',
+            '../../../pictures/imagesLiterature/8/2.jpg',
+            '../../../pictures/imagesLiterature/8/3.jpg',
+            '../../../pictures/imagesLiterature/8/4.jpg',
+        ],
+        trueValue: 2
     }
-]
-
-/* 
-let src = 'http://habrastorage.org/getpro/toster/6ec5a678/f246/4a66/6ec5a678-f246-4a66-93aa-9d23a154c62c/gruffi.gif';
-document.getElementById('click').onclick = function() {
-    document.getElementById('user-avatar').src = src;
-} */
-
-
-
-// var img = document.createElement("IMG");
-// img.src = "upload/medialibrary/e60/e605f52693f032eb03f46ffde79ef5bf.jpg";
-
-// test.innerHTML += "<img src=\"" + img + "\" width=\"200\" height=\"200\">";
-/*
- answers.push(
-                    '<label>'
-                        + '<input type="radio" name="question'+i+'" value="'+letter+'">'
-                        + letter + ': '
-                        + questions[i].answers[letter]
-                    + '</label>'
-                );
-*/
-               
+];

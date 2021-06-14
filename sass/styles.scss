@@ -20,9 +20,14 @@
 
 
 html, body {
+    position: relative;
     margin: 0;
     padding: 0;
     font-family: Play-Regular;
+    canvas {
+        position: absolute;
+        transform: translate(-300px, -200px);
+    }
     h1{
         margin: 0;
         font-family: FontdinerSwanky-Regular;

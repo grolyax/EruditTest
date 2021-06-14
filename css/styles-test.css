@@ -96,4 +96,7 @@
 .test__form {
   overflow: hidden; }
 
+.answer1:hover {
+  background-color: gray; }
+
 /*# sourceMappingURL=styles-test.css.map */

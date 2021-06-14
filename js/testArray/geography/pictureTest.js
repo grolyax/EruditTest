@@ -1,95 +1,92 @@
-const imgQuiz = [
+export let pictQuizGeography = [
     {
-        question: 'Этот политический деятель написал более 500 картин, 50 из которых были выставлены на профессиональном уровне. Пикассо говорил, что политик мог бы выбрать искусство в качестве карьеры. Как зовут этого человека?',
+        question: 'На какой из картинок изображён Арктический пояс?',
         values: [
-            './picture/imagesHistory/0/churchill.jpeg',
-            './picture/imagesHistory/0/gitler.jpeg',
-            './picture/imagesHistory/0/roosevelt.jpeg',
-            './picture/imagesHistory/0/goll.jpeg',
+            '../../../pictures/imagesGeography/0/1.jpg',
+            '../../../pictures/imagesGeography/0/2.jpg',
+            '../../../pictures/imagesGeography/0/3.jpg',
+            '../../../pictures/imagesGeography/0/4.jpg',
         ],
-        trueValue: 0  
+        trueValue: 1
     },
     {
-        question: 'Какая картина выполнена Иеронимом Босхом?',
+        question: 'Выберите карту, на которой выделена территория Непала:',
         values: [
-            './picture/imagesHistory/1/небосх.jpeg',
-            './picture/imagesHistory/1/босх.jpeg',
-            './picture/imagesHistory/1/небосх.jpeg',
-            './picture/imagesHistory/1/небосх.jpeg',
+            '../../../pictures/imagesGeography/1/1.png',
+            '../../../pictures/imagesGeography/1/2.png',
+            '../../../pictures/imagesGeography/1/3.jpg',
+            '../../../pictures/imagesGeography/1/4.jpg',
         ],
-        trueValue: 1  
+        trueValue: 0
     },
     {
-        question: 'Какая картина отображает события "Ледового побоища"?',
+        question: 'На какой картинке изображена гора Фудзияма?',
         values: [
-            './picture/imagesHistory/2/неледовое.jpeg',
-            './picture/imagesHistory/2/неледовое.jpeg',
-            './picture/imagesHistory/2/ледовое.jpeg',
-            './picture/imagesHistory/2/неледовое.jpeg',
+            '../../../pictures/imagesGeography/2/1.jpg',
+            '../../../pictures/imagesGeography/2/2.jpg',
+            '../../../pictures/imagesGeography/2/3.jpg',
+            '../../../pictures/imagesGeography/2/4.jpg',
         ],
-        trueValue: 2  
+        trueValue: 0
     },
     {
-        question: 'Кто сказал: «Принцип «око за око» сделает весь мир слепым»?',
+        question: 'Река Хуанхэ изображена на картинке:',
         values: [
-            './picture/imagesHistory/3/неганди.jpeg',
-            './picture/imagesHistory/3/неганди.jpeg',
-            './picture/imagesHistory/3/неганди.jpeg',
-            './picture/imagesHistory/3/ганди.jpeg',
+            '../../../pictures/imagesGeography/3/1.jpg',
+            '../../../pictures/imagesGeography/3/2.jpg',
+            '../../../pictures/imagesGeography/3/3.jpg',
+            '../../../pictures/imagesGeography/3/4.jpg',
         ],
-        trueValue: 3  
+        trueValue: 1
     },
     {
-        question: 'Кто получил прозвище «бабушка Европы»?',
+        question: 'Выберите карту, на которой выделена территория Республики Коми:',
         values: [
-            './picture/imagesHistory/4/виктория.jpeg',
-            './picture/imagesHistory/4/невиктория.jpeg',
-            './picture/imagesHistory/4/невиктория.jpeg',
-            './picture/imagesHistory/4/невиктория.jpeg',
+            '../../../pictures/imagesGeography/4/1.png',
+            '../../../pictures/imagesGeography/4/2.png',
+            '../../../pictures/imagesGeography/4/3.png',
+            '../../../pictures/imagesGeography/4/4.png',
         ],
-        trueValue: 0  
+        trueValue: 2
     },
     {
-        question: 'Кто получил прозвище «Беспокойный Теодор»?',
+        question: 'Выберите флаг страны, которой принадлежит остров Бали:',
         values: [
-            './picture/imagesHistory/5/не.jpeg',
-            './picture/imagesHistory/5/рузвельт.jpeg',
-            './picture/imagesHistory/5/не.jpeg',
-            './picture/imagesHistory/5/не.jpeg',
+            '../../../pictures/imagesGeography/5/1.png',
+            '../../../pictures/imagesGeography/5/2.jpg',
+            '../../../pictures/imagesGeography/5/3.png',
+            '../../../pictures/imagesGeography/5/4.png',
         ],
-        trueValue: 1  
+        trueValue: 1
     },
     {
-        question: 'Кому принадлежит фраза «Атомная бомба - бумажный тигр...»?',
+        question: 'Выберите флаг страны, в которой находится город Зальцбург?',
         values: [
-            './picture/imagesHistory/6/не.jpeg',
-            './picture/imagesHistory/6/не.jpeg',
-            './picture/imagesHistory/6/не.jpeg',
-            './picture/imagesHistory/6/маоjpeg',
+            '../../../pictures/imagesGeography/6/1.png',
+            '../../../pictures/imagesGeography/6/2.jpg',
+            '../../../pictures/imagesGeography/6/3.png',
+            '../../../pictures/imagesGeography/6/4.jpg',
         ],
-        trueValue: 3  
+        trueValue: 3
+    },
+    {
+        question: 'Укажите флаг страны,национальным героем которой является Тадеуш Костюшко?',
+        values: [
+            '../../../pictures/imagesGeography/7/1.png',
+            '../../../pictures/imagesGeography/7/2.jpg',
+            '../../../pictures/imagesGeography/7/3.png',
+            '../../../pictures/imagesGeography/7/4.png',
+        ],
+        trueValue: 3
+    },
+    {
+        question: 'Выберите флаг страны, которая является лидером в сфере автомобилестроения?',
+        values: [
+            '../../../pictures/imagesGeography/8/1.jpg',
+            '../../../pictures/imagesGeography/8/2.png',
+            '../../../pictures/imagesGeography/8/3.jpg',
+            '../../../pictures/imagesGeography/8/4.png',
+        ],
+        trueValue: 0
     }
-]
-
-/* 
-let src = 'http://habrastorage.org/getpro/toster/6ec5a678/f246/4a66/6ec5a678-f246-4a66-93aa-9d23a154c62c/gruffi.gif';
-document.getElementById('click').onclick = function() {
-    document.getElementById('user-avatar').src = src;
-} */
-
-
-
-// var img = document.createElement("IMG");
-// img.src = "upload/medialibrary/e60/e605f52693f032eb03f46ffde79ef5bf.jpg";
-
-// test.innerHTML += "<img src=\"" + img + "\" width=\"200\" height=\"200\">";
-/*
- answers.push(
-                    '<label>'
-                        + '<input type="radio" name="question'+i+'" value="'+letter+'">'
-                        + letter + ': '
-                        + questions[i].answers[letter]
-                    + '</label>'
-                );
-*/
-               
+];
