@@ -8,7 +8,7 @@ import renderNextStartFalse from './render/renderAnswerFalse.js';
 import renderTest from './render/renderTest.js';
 import renderResultTest from './render/render-result-test.js';
 import renderMainPersonal from './render/render-main-personal.js';
-import { drawStar } from './draw-result-sign.js'
+//import { drawStar } from './draw-result-sign.js'
 
 const listRoutePattern = /^\/list\/\d+$/;
 const INDEX_URLS = ['/', '/index.html'];
@@ -23,7 +23,7 @@ const PERSONAL__URL = '/mainPersonal';
 
 export function renderPage() {
   const { pathname: currentUrl } = window.location;
-  drawStar();
+
   if (INDEX_URLS.includes(currentUrl)) {
     if (currentUser.userData !== null) {
       renderMainPersonal();
